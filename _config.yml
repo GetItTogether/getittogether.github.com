@@ -7,20 +7,20 @@
 # YAML Syntax: http://en.wikipedia.org/wiki/YAML#Syntax
 
 # Name of your site (Used in meta data and throughout site branding)
-name: "Party on, Garth!"
+name: "Get It Together!"
 
 # Short bio or description (displayed in the <header> section)
-description: "A free, responsive, one-page <a href='http://getbootstrap.com/'>Bootstrap</a> theme for <a href='http://jekyllrb.com/'>Jekyll</a>. <br>A configurable, sassified, jekyllized, fork of  <a href='https://github.com/IronSummitMedia/startbootstrap-grayscale'>Grayscale</a>."
+description: "lorem ipsum"
 
 # Your website URL (e.g. http://username.github.io or http://www.yourdomain.foo)
 # Used for Sitemap.xml and your RSS feed
-url: http://mediadoneright.github.io
+url: http://getittogether.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://username.github.io/repository-name)
 # and NOT your User repository (http://username.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/jekyll-theme-PartyOnGarth"
+baseurl: ""
 
 # Customize navigation for the site
 navigation: # Site Navigation Menu elements: names and links
@@ -49,10 +49,10 @@ avatar:
 # Includes an icon in the footer for each username you enter
 links:
   dribbble:
-  email: PartyOnGarth@MediaDoneRight.com
+  email:
   facebook:
   flickr:
-  github: MediaDoneRight/jekyll-theme-PartyOnGarth
+  github:
   instagram:
   linkedin:
   pinterest:
