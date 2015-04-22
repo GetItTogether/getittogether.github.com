@@ -24,8 +24,7 @@ published: true
 				<div class="row">
 					<a href="#testamonials" class="btn btn-circle page-scroll">
 						<i class="fa fa-angle-double-down animated"></i></a>
-
-					<div class="col-md-4 col-md-offset-1"><p class="intro-text">{{ page.description }}</p></div>
+					<div class="col-md-4 col-md-offset-1"><span class="intro-text">{{ page.description  }}</span></div>
 				</div>
 	</div>
 </header>
