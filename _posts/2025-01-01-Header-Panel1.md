@@ -1,7 +1,7 @@
 ---
 
-title: 3 Steps
-subtitle: Form Follows Function
+title: "3 Steps"
+subtitle: "Form Follows Function"
 description: "<p>Our three-step interior therepy program will cut through the clutter.</p><p>A new harmonious environment will leave you free to do more of what's important to you.</p><p>With less.</p>"
 step1: "<h2>Motivation</h2>A compelling set of questions to unlock the potential for your living / workspace"
 step2: "<h2>Mindset</h2>Customized plan to enssure your surroundings relate intelligently to who you are"
