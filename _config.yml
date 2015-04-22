@@ -29,10 +29,10 @@ navigation: # Site Navigation Menu elements: names and links
     link: "#page-top"
     logo: "" # if empty, defaults to an arrow icon using font-awesome
   main: # Main Menu
-    e1: About
-    elink1: "#about"
-    e2: Download
-    elink2: "#download"
+    e1: Testamonials
+    elink1: "#testamonials"
+    e2: About
+    elink2: "#about"
     e3: Contact
     elink3: "#contact"
   foot: # Footer Menu
