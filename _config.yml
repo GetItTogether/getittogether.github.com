@@ -25,7 +25,7 @@ baseurl: ""
 # Customize navigation for the site
 navigation: # Site Navigation Menu elements: names and links
   brand:
-    text: "<span class='light'>Party</span> on, Garth!"
+    text: "<span class='light'>Get</span> it Together!"
     link: "#page-top"
     logo: "" # if empty, defaults to an arrow icon using font-awesome
   main: # Main Menu

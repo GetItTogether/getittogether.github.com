@@ -1,6 +1,6 @@
 ---
 layout: manual
-title: "Party on, Garth!"
+title: "Get It Together!"
 permalink: /manual/
 published: true
 ---
