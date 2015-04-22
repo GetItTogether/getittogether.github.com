@@ -77,13 +77,13 @@ styling: "/style.css"
 script: "/tools/js/rockon.js"
 fontawesome: "/tools/font-awesome/css/font-awesome.min.css"
 jquery:
-  main: "/tools/js/jquery.js"
-  easing: "/tools/js/jquery.easing.min.js"
+  main: "//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"
+  easing: "//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.easing.min.js"
 bootstrap:
-  #css: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
-  css: "/tools/css/bootstrap.min.css"
-  #js: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
-  js: "/tools/js/bootstrap.min.js"
+  css: "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+  #css: "/tools/css/bootstrap.min.css"
+  js: "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
+  #js: "/tools/js/bootstrap.min.js"
 googlefonts: "//fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,700,400italic,700italic"
 googlemaps: "//maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false" # - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
 
