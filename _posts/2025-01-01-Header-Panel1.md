@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Party on!
+title: Get It Together
 published: true
 ---
 
