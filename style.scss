@@ -56,7 +56,7 @@ p {
 }
 
 a {
-    color: $primary;
+    color: $brand-c1;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -65,7 +65,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: $secondary;
+    color: $brand-c2;
 }
 
 .light {
@@ -159,21 +159,28 @@ a:focus {
     text-align: center;
     color: #fff;
     background-color: $panel1-bg-tint;
+    background-image: url($panel1-bg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 55% 0%;
+    background-size: contain;
+    top: 0;
+    bottom: 0;
 }
-.intro::after {
-  content: "";
-  background: url($panel1-bg) no-repeat top center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
+// .intro::after {
+//   content: "";
+//   background-color: $panel1-bg-tint;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -2;
+// }
 
 .intro .intro-body {
     display: table-cell;
@@ -184,7 +191,17 @@ a:focus {
     font-size: 40px;
 }
 
-.intro .row > div,
+.verticalbar {
+  background-color: $brand-c1;
+  width: 300px;
+  height:auto;
+  position:absolute;
+  left:50%;
+  top:0;
+  bottom:0;
+  display:block;
+  //z-index: -1;
+}
 .download-section .container > div {
   background-color: darken(rgba($panel1-bg-tint,.9),40%);
   border-radius:20px;
@@ -332,17 +349,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid $primary;
-    color: $primary;
+    border: 1px solid $brand-c1;
+    color: $brand-c1;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid $secondary;
+    border: 1px solid $brand-c2;
     outline: 0;
     color: #000;
-    background-color: $secondary;
+    background-color: $brand-c2;
 }
 
 ul.banner-social-buttons {
@@ -479,7 +496,7 @@ nav {
   a {
     @include mobile {
       // margin: 0 10px;
-      // color: $secondary;
+      // color: $brand-c2;
     }
   }
 }
