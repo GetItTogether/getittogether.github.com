@@ -22,7 +22,7 @@ published: true
 					<div class="col-md-6"></div>
 				</div>
 				<div class="row">
-					<a href="#download" class="btn btn-circle page-scroll">
+					<a href="#testamonials" class="btn btn-circle page-scroll">
 						<i class="fa fa-angle-double-down animated"></i></a>
 
 					<div class="col-md-4 col-md-offset-1"><p class="intro-text">{{ page.description }}</p></div>
