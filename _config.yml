@@ -74,16 +74,18 @@ google_analytics:
 #
 
 styling: "/style.css"
-script: "/js/rockon.js"
-fontawesome: "/font-awesome/css/font-awesome.min.css"
+script: "/tools/js/rockon.js"
+fontawesome: "/tools/font-awesome/css/font-awesome.min.css"
 jquery:
-  main: "/js/jquery.js"
-  easing: "/js/jquery.easing.min.js"
+  main: "/tools/js/jquery.js"
+  easing: "/tools/js/jquery.easing.min.js"
 bootstrap:
-  css: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"  # "css/bootstrap.min.css"
-  js: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"     # "js/bootstrap.min.js"
-googlefonts: "http://fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,700,400italic,700italic"
-googlemaps: "https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false" # - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
+  #css: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+  css: "/tools/css/bootstrap.min.css"
+  #js: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
+  js: "/tools/js/bootstrap.min.js"
+googlefonts: "//fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,700,400italic,700italic"
+googlemaps: "//maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false" # - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
 
 
 markdown: redcarpet
@@ -95,7 +97,7 @@ permalink: /:title/
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  sass_dir: _scss
+  sass_dir: "/tools/_scss"
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
