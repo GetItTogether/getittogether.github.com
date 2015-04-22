@@ -1,6 +1,6 @@
 ---
 layout: onepage
-title: "Get it Together"
+title: ""
 permalink: /
 published: true
 ---
