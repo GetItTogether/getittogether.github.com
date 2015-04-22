@@ -18,7 +18,6 @@ published: true
 				<div class="row">
 					<div class="dec-column">&nbsp;</div>
 					<div class="col-md-2 col-md-offset-10"><h2>{{ page.title }}<h2></div>
-
 					<div class="col-md-2 col-md-offset-9"><p class="step-text">{{ page.step1 }}</p></div>
 					<div class="col-md-2 col-md-offset-8"><p class="step-text">{{ page.step2 }}</p></div>
 					<div class="col-md-2 col-md-offset-7"><p class="step-text">{{ page.step3 }}</p></div>
