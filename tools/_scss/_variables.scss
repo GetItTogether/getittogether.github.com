@@ -23,10 +23,12 @@ $gray: #666;
 $lightGray: #eee;
 
 // Theme Elements
+$navbar-height: 70px;
 $clr-navbar: red;
 $clr-navbar-link: white;
+$clr-navbar-link-bg-hover: rgba(255, 255, 255, .3);
 $clr-navbar-bg: black;
-$clr-navbar-border: rgba(255,255,255,.3);
+$clr-navbar-border: rgba(255, 255, 255, .3);
 $clr-navbar-border-thickness: 1px;
 $clr-navbar-border-type: solid;
 
@@ -34,9 +36,9 @@ $clr-code: rgba(white,1);
 $clr-code-bg: rgba($brand-c1,.3);
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$helvetica: Helvetica, Arial, 'Droid Sans', Raleway, sans-serif;
+$helveticaNeue: 'Helvetica Neue', Helvetica, Arial, 'Droid Sans', Raleway, sans-serif;
+$georgia: Georgia, 'Times New Roman', Times, serif;
 
 // Mobile breakpoints
 @mixin mobile {
