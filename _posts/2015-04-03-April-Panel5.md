@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Map
-published: true
+published: false
 ---
 
 <!-- {{ page.title }} Section -->
