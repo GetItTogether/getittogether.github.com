@@ -1,6 +1,12 @@
-{% if site.bootstrap.js %}
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ site.bootstrap.js }}"></script>
+{% if site.webfontloader.fonts %}
+<script src="{{ site.baseurl }}{{ site.webfontloader.url }}"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: [{{ site.webfontloader.fonts }}]
+    }
+  });
+</script>
 {% endif %}
 
 {% if site.jquery.main %}
@@ -11,6 +17,11 @@
 {% if site.jquery.easing %}
 <!-- Plugin JavaScript -->
 <script src="{{ site.baseurl }}{{ site.jquery.easing }}"></script>
+{% endif %}
+
+{% if site.bootstrap.js %}
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ site.bootstrap.js }}"></script>
 {% endif %}
 
 {% if site.googlemaps %}
