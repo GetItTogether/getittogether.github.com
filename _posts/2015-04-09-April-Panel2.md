@@ -5,7 +5,7 @@ published: true
 ---
 
 <!-- About Section -->
-<section id="about" class="container content-section text-center">
+<section id="about" class="container-fluid content-section text-center">
 		<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 						<h2>About {{ site.name}}!</h2>
