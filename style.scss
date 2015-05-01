@@ -13,7 +13,7 @@ body {
     font-family: $helvetica;
     width: 100%;
     height: 100%;
-    color: $clr-text-main;
+    color: $text-main-clr;
     background-color: #ccc;
 }
 
@@ -37,8 +37,8 @@ h6 {
 }
 
 code {
-  color: $clr-code;
-  background-color: $clr-code-bg;
+  color: $code-clr;
+  background-color: $code-clr-bg;
   padding:4px 8px;
 }
 
@@ -84,10 +84,10 @@ a {
 }
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: $clr-navbar-border-thickness $clr-navbar-border-type $clr-navbar-border;
+    border-bottom: $navbar-clr-border-thickness $navbar-clr-border-type $navbar-clr-border;
     text-transform: uppercase;
     font-family: $helvetica;
-    background-color: $clr-navbar-bg;
+    background-color: $navbar-clr-bg;
 }
 
 .navbar-custom .navbar-brand {
@@ -100,7 +100,7 @@ a {
 // .navbar-custom .navbar-brand .navbar-toggle {
 //     padding: 4px 6px;
 //     font-size: 16px;
-//     color: $clr-navbar;
+//     color: $navbar-clr;
 // }
 
 // .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -108,7 +108,7 @@ a {
 //     outline: 0;
 // }
 .navbar-custom a {
-     color: $clr-navbar-link;
+     color: $navbar-clr-link;
 }
 
 .navbar-custom .nav li a {
@@ -116,14 +116,14 @@ a {
 }
 .navbar-custom .nav li a:hover {
      outline: 0;
-     color: $clr-navbar-link;
-    background-color: rgba($clr-navbar-link-bg-hover,.8);//$clr-navbar-link-bg-hover;
+     color: $navbar-clr-link;
+    background-color: rgba($navbar-clr-link-bg-hover,.8);//$navbar-clr-link-bg-hover;
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
      outline: 0;
-     color: $clr-navbar-link;
-     background-color: $clr-navbar-link-bg-hover;
+     color: $navbar-clr-link;
+     background-color: $navbar-clr-link-bg-hover;
 }
 
 .navbar-custom .nav li.active {
@@ -131,10 +131,10 @@ a {
 }
 
 .navbar-custom .nav li.active a {
-  background-color: $clr-navbar-link-bg-hover;;//
+  background-color: $navbar-clr-link-bg-hover;;//
       &:hover {
-         color: $clr-navbar-link;
-         background-color: $clr-navbar-link-bg-hover;
+         color: $navbar-clr-link;
+         background-color: $navbar-clr-link-bg-hover;
        }
  }
 @media (min-width:768px) {
@@ -149,9 +149,9 @@ a {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: $clr-navbar-collapse-bg;
+        background: $navbar-clr-collapse-bg;
         a {
-          color: $clr-navbar-collapse-link;
+          color: $navbar-clr-collapse-link;
         }
         .navbar-brand {
           height: 50px;
@@ -167,7 +167,7 @@ a {
 //
 
 .intro {
-   background-color: $panel1-bg-tint;
+   background-color: $panel1-bg-clr;
    position: relative;
    //z-index: -1;
    //min-height: 100%;
@@ -177,8 +177,9 @@ a {
 .intro-body {
     width: 100%;
     height: 100%;
+    min-height: 100%;
     padding-top: $navbar-height;
-    background-image: url($panel1-bg), url($panel1-bar);
+    background-image: url($panel1-woman), url($panel1-bar);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 0%, 54% 0%;
@@ -194,22 +195,13 @@ a {
     }
 }
 
-.verticalbar {
-  // background-color: $brand-c1;
-  // width: 15%;
-  // height: 100%;
-  // left: 47%;
-  // min-width: 100px;
-  // position: fixed;
-}
-
-@media screen and (max-device-height: 799px) {
+@media screen and (max-device-height: 799px) { // short vertical height
   .intro-body .row div {
-    margin-top: 10px;
+    margin-top: 10px;  // higher on smaller screens
   }
   .step1 {
     h2 {
-      margin: 0px 0px 10px;
+      margin: 0px 0px 10px; // higher on smaller screens
     }
   }
 }
@@ -252,14 +244,14 @@ a {
 //  margin-left: 52%;
 //  width: 20%;
   i {
-   background-color: $panel1-bg-tint;
+   background-color: $panel1-bg-clr;
   //background-image: url("img/circle-beige0.svg");
   }
 }
 
 .step3 {
 //  margin-left: 46%;
-//  width: 20%;
+  width: 20%;
   i {
   background-color: $brand-c3;
   //background-image: url("img/circle-red4.svg");
@@ -275,9 +267,9 @@ a {
 //
 //
 //
-// #testamonials {
-//   background-color: $brand-c2;
-// }
+#testamonials {
+   background-color: $panel2-bg-clr;
+}
 //
 // .download-section {
 //   display: table;
@@ -286,7 +278,7 @@ a {
 //   padding: 100px 0;
 //   text-align: center;
 //   color: #fff;
-//   //background-color: $panel1-bg-tint;
+//   //background-color: $panel1-bg-clr;
 //
 //   background-repeat: no-repeat;
 //   background-attachment: fixed;
@@ -302,7 +294,7 @@ a {
 // }
 //
 // .download-section .container > div {
-//   background-color: darken(rgba($panel1-bg-tint,.9),40%);
+//   background-color: darken(rgba($panel1-bg-clr,.9),40%);
 //   border-radius:20px;
 //   padding:20px;
 // }
@@ -481,12 +473,12 @@ a {
 //
 // ::-moz-selection {
 //     text-shadow: none;
-//     background: $clr-selection-bg;
+//     background: $selection-clr-bg;
 // }
 //
 // ::selection {
 //     text-shadow: none;
-//     background: $clr-selection-bg;
+//     background: $selection-clr-bg;
 // }
 //
 // img::selection {
