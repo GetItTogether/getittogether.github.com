@@ -10,14 +10,15 @@
 // Syntax highlighting @import is at the bottom of this file
 // -------------------------- ORIGINAL grayscale.css
 body {
+    font-family: $helvetica;
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #000;
+    color: $clr-text-main;
+    background-color: #ccc;
 }
 
 html {
+    font-family: $helvetica;
     width: 100%;
     height: 100%;
 }
@@ -30,7 +31,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $helvetica;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -45,10 +46,7 @@ p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
-}
-
-@media(min-width:768px) {
-    p {
+    @media (min-width:768px) {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
@@ -57,26 +55,38 @@ p {
 
 a {
     color: $brand-c1;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $brand-c2;
+    }
 }
 
-a:hover,
-a:focus {
-    text-decoration: none;
-    color: $brand-c2;
+// .light {
+//     font-weight: 400;
+// }
+//
+.navbar-custom .navbar-brand {
+    float: left;
+    height: $navbar-height;
+    //padding: 15px;
+    padding: 10px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    display: inline-block;
+    &> img {
+    vertical-align: middle;
+    display: inline-block;
+    max-height: 300%;
+    height: $navbar-height - 20px;
+  }
 }
-
-.light {
-    font-weight: 400;
-}
-
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: $clr-navbar-border-thickness $clr-navbar-border-type $clr-navbar-border;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $helvetica;
     background-color: $clr-navbar-bg;
 }
 
@@ -87,38 +97,33 @@ a:focus {
 .navbar-custom .navbar-brand:focus {
     outline: 0;
 }
+// .navbar-custom .navbar-brand .navbar-toggle {
+//     padding: 4px 6px;
+//     font-size: 16px;
+//     color: $clr-navbar;
+// }
 
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 16px;
-    color: $clr-navbar;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
-    outline: 0;
-}
-
+// .navbar-custom .navbar-brand .navbar-toggle:focus,
+// .navbar-custom .navbar-brand .navbar-toggle:active {
+//     outline: 0;
+// }
 .navbar-custom a {
-    color: $clr-navbar-link;
+     color: $clr-navbar-link;
 }
 
 .navbar-custom .nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
 }
-
 .navbar-custom .nav li a:hover {
-    outline: 0;
-    color: rgba(255,255,255,.8);
-    background-color: transparent;
+     outline: 0;
+     color: $clr-navbar-link;
+    background-color: rgba($clr-navbar-link-bg-hover,.8);//$clr-navbar-link-bg-hover;
 }
-
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
-    outline: 0;
-    background-color: transparent;
+     outline: 0;
+     color: $clr-navbar-link;
+     background-color: $clr-navbar-link-bg-hover;
 }
 
 .navbar-custom .nav li.active {
@@ -126,407 +131,455 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
-}
-
-.navbar-custom .nav li.active a:hover {
-    color: #fff;
-}
-
-@media(min-width:768px) {
+  background-color: $clr-navbar-link-bg-hover;;//
+      &:hover {
+         color: $clr-navbar-link;
+         background-color: $clr-navbar-link-bg-hover;
+       }
+ }
+@media (min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        background: $clr-navbar-collapse-bg;
+        a {
+          color: $clr-navbar-collapse-link;
+        }
+        .navbar-brand {
+          height: 50px;
+          img{
+            height: 30px;
+          }
+        }
     }
 }
 
+//
+// Panel1
+//
+
 .intro {
-    display: table;
+   background-color: $panel1-bg-tint;
+   position: relative;
+   //z-index: -1;
+   //min-height: 100%;
+   //display: table;   // http://stackoverflow.com/questions/26042055/firefox-rendering-of-background-image
+}
+
+.intro-body {
     width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background-color: $panel1-bg-tint;
-    background-image: url($panel1-bg);
+    height: 100%;
+    padding-top: $navbar-height;
+    background-image: url($panel1-bg), url($panel1-bar);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 55% 0%;
+    background-position: 50% 0%, 54% 0%;
     background-size: contain;
-    top: 0;
-    bottom: 0;
-}
-// .intro::after {
-//   content: "";
-//   background-color: $panel1-bg-tint;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   position: absolute;
-//   z-index: -2;
-// }
 
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.intro .intro-body .brand-heading {
-    font-size: 40px;
+    .row div {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      margin-top: 30px;
+    }
 }
 
 .verticalbar {
-  background-color: $brand-c1;
-  width: 300px;
-  height:auto;
-  position:absolute;
-  left:50%;
-  top:0;
-  bottom:0;
-  display:block;
-  //z-index: -1;
-}
-.download-section .container > div {
-  background-color: darken(rgba($panel1-bg-tint,.9),40%);
-  border-radius:20px;
-  padding:20px;
+  // background-color: $brand-c1;
+  // width: 15%;
+  // height: 100%;
+  // left: 47%;
+  // min-width: 100px;
+  // position: fixed;
 }
 
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
-
-@media(min-width:768px) {
-    .intro {
-        height: 100%;
-        padding: 0;
+@media screen and (max-device-height: 799px) {
+  .intro-body .row div {
+    margin-top: 10px;
+  }
+  .step1 {
+    h2 {
+      margin: 0px 0px 10px;
     }
-
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 26px;
-    }
+  }
 }
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
+.step1,
+.step2,
+.step3 {
+  position: relative;
+  h2 {
+    margin: 0px 0px 20px;
+    display: block;
+    color: black;
+  }
+  p {
+    font-size: 14px;
+    color: black;
+  }
 
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
-}
-
-.btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {
-    0% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-.content-section {
-    padding-top: 100px;
-}
-
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url($panel3-bg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
-}
-
-.btn {
-    border-radius: 0;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.btn-default {
-    border: 1px solid $brand-c1;
-    color: $brand-c1;
-    background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid $brand-c2;
-    outline: 0;
-    color: #000;
+  i {
+    // 3 Steps circles
+    border-radius: 50%;
     background-color: $brand-c2;
+    repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 225px;
+    width: 225px;
+    position: absolute;
+    left: -10%;
+    top: -40%;
+    behavior: url(/tools/pie/PIE.htc)\9; /* remove if you don't care about IE8 */
+  }
 }
 
-ul.banner-social-buttons {
-    margin-top: 0;
+.step1 {
+  margin-top: 50px;
+//  margin-left: 60%;
+//  width: 20%;
+}
+.step2 {
+//  margin-left: 52%;
+//  width: 20%;
+  i {
+   background-color: $panel1-bg-tint;
+  //background-image: url("img/circle-beige0.svg");
+  }
 }
 
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
-
-footer {
-    padding: 50px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: $clr-selection-bg;
-}
-
-::selection {
-    text-shadow: none;
-    background: $clr-selection-bg;
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
+.step3 {
+//  margin-left: 46%;
+//  width: 20%;
+  i {
+  background-color: $brand-c3;
+  //background-image: url("img/circle-red4.svg");
+  }
 }
 
 
 
 
-
-// -------------------------- ORIGINAL JEKYLL-NOW SCSS SKELTON
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
-.date {
-}
-
-// Specify the color of the selection
-::-moz-selection {
-}
-::selection {
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
 
 //
-// .masthead
+// Testamonials -- Panel2
 //
-
-.wrapper-masthead {
-}
-
-.masthead {
-  @include mobile {
-  //  text-align: center;
-  }
-}
-
-.site-avatar {
-  @include mobile {
-  }
-  img {
-  }
-}
-
-.site-info {
-  @include mobile {
-    // float: none;
-    // display: block;
-    // margin: 0 auto;
-  }
-}
-
-.site-name {
-}
-
-.site-description {
-  @include mobile {
-    // margin: 3px 0;
-  }
-}
-
-nav {
-  @include mobile {
-    // float: none;
-    // margin-top: 9px;
-    // display: block;
-    // font-size: 16px;
-  }
-  a {
-    @include mobile {
-      // margin: 0 10px;
-      // color: $brand-c2;
-    }
-  }
-}
-
 //
-// .main
 //
-
-.posts > .post {
-}
-
-.posts > .post:last-child {
-}
-
-.post {
-  blockquote {
-  }
-  .comments {
-  }
-  .read-more {
-  }
-}
-
-.wrapper-footer {
-}
-
-footer {
-}
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+// #testamonials {
+//   background-color: $brand-c2;
+// }
+//
+// .download-section {
+//   display: table;
+//   width: 100%;
+//   height: auto;
+//   padding: 100px 0;
+//   text-align: center;
+//   color: #fff;
+//   //background-color: $panel1-bg-tint;
+//
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   background-position: 55% 0%;
+//   background-size: contain;
+//   top: 0;
+//   bottom: 0;
+//
+//     padding: 50px 0;
+//     color: #fff;
+//     background: url($panel3-bg) no-repeat center center scroll;
+//     background-size: cover;
+// }
+//
+// .download-section .container > div {
+//   background-color: darken(rgba($panel1-bg-tint,.9),40%);
+//   border-radius:20px;
+//   padding:20px;
+// }
+//
+// .intro .intro-body .intro-text {
+//     font-size: 18px;
+// }
+//
+// @media(min-width:768px) {
+//     .intro {
+//         height: 100%;
+//         padding: 0;
+//     }
+//
+//     .intro .intro-body .brand-heading {
+//         font-size: 100px;
+//     }
+//
+//     .intro .intro-body .intro-text {
+//         font-size: 26px;
+//     }
+// }
+//
+// .btn-circle {
+//     width: 70px;
+//     height: 70px;
+//     margin-top: 15px;
+//     padding: 7px 16px;
+//     border: 2px solid #fff;
+//     border-radius: 100%!important;
+//     font-size: 40px;
+//     color: #fff;
+//     background: 0 0;
+//     -webkit-transition: background .3s ease-in-out;
+//     -moz-transition: background .3s ease-in-out;
+//     transition: background .3s ease-in-out;
+// }
+//
+// .btn-circle:hover,
+// .btn-circle:focus {
+//     outline: 0;
+//     color: #fff;
+//     background: rgba(255,255,255,.1);
+// }
+//
+// .btn-circle i.animated {
+//     -webkit-transition-property: -webkit-transform;
+//     -webkit-transition-duration: 1s;
+//     -moz-transition-property: -moz-transform;
+//     -moz-transition-duration: 1s;
+// }
+//
+// .btn-circle:hover i.animated {
+//     -webkit-animation-name: pulse;
+//     -moz-animation-name: pulse;
+//     -webkit-animation-duration: 1.5s;
+//     -moz-animation-duration: 1.5s;
+//     -webkit-animation-iteration-count: infinite;
+//     -moz-animation-iteration-count: infinite;
+//     -webkit-animation-timing-function: linear;
+//     -moz-animation-timing-function: linear;
+// }
+//
+// @-webkit-keyframes pulse {
+//     0% {
+//         -webkit-transform: scale(1);
+//         transform: scale(1);
+//     }
+//
+//     50% {
+//         -webkit-transform: scale(1.2);
+//         transform: scale(1.2);
+//     }
+//
+//     100% {
+//         -webkit-transform: scale(1);
+//         transform: scale(1);
+//     }
+// }
+//
+// @-moz-keyframes pulse {
+//     0% {
+//         -moz-transform: scale(1);
+//         transform: scale(1);
+//     }
+//
+//     50% {
+//         -moz-transform: scale(1.2);
+//         transform: scale(1.2);
+//     }
+//
+//     100% {
+//         -moz-transform: scale(1);
+//         transform: scale(1);
+//     }
+// }
+//
+// .content-section {
+//     padding-top: 100px;
+// }
+//
+// #map {
+//     width: 100%;
+//     height: 200px;
+//     margin-top: 100px;
+// }
+//
+// @media(min-width:767px) {
+//     .content-section {
+//         padding-top: 250px;
+//     }
+//
+//     .download-section {
+//         padding: 100px 0;
+//     }
+//
+//     #map {
+//         height: 400px;
+//         margin-top: 250px;
+//     }
+// }
+//
+// .btn {
+//     border-radius: 0;
+//     text-transform: uppercase;
+//     font-family: $helvetica;
+//     font-weight: 400;
+//     -webkit-transition: all .3s ease-in-out;
+//     -moz-transition: all .3s ease-in-out;
+//     transition: all .3s ease-in-out;
+// }
+//
+// .btn-default {
+//     border: 1px solid $brand-c1;
+//     color: $brand-c1;
+//     background-color: transparent;
+// }
+//
+// .btn-default:hover,
+// .btn-default:focus {
+//     border: 1px solid $brand-c2;
+//     outline: 0;
+//     color: #000;
+//     background-color: $brand-c2;
+// }
+//
+// ul.banner-social-buttons {
+//     margin-top: 0;
+// }
+//
+// @media(max-width:1199px) {
+//     ul.banner-social-buttons {
+//         margin-top: 15px;
+//     }
+// }
+//
+// @media(max-width:767px) {
+//     ul.banner-social-buttons li {
+//         display: block;
+//         margin-bottom: 20px;
+//         padding: 0;
+//     }
+//
+//     ul.banner-social-buttons li:last-child {
+//         margin-bottom: 0;
+//     }
+// }
+//
+// footer {
+//     padding: 50px 0;
+// }
+//
+// footer p {
+//     margin: 0;
+// }
+//
+// ::-moz-selection {
+//     text-shadow: none;
+//     background: $clr-selection-bg;
+// }
+//
+// ::selection {
+//     text-shadow: none;
+//     background: $clr-selection-bg;
+// }
+//
+// img::selection {
+//     background: 0 0;
+// }
+//
+// img::-moz-selection {
+//     background: 0 0;
+// }
+//
+// body {
+//     webkit-tap-highlight-color: rgba(255,255,255,.2);
+// }
+//
+//
+//
+//
+//
+// // -------------------------- ORIGINAL JEKYLL-NOW SCSS SKELTON
+// // Fixes images in popup boxes from Google Translate
+// // .gmnoprint img {
+// //   max-width: none;
+// // }
+// //
+// // // Nicolas Gallagher's micro clearfix hack
+// // // http://nicolasgallagher.com/micro-clearfix-hack/
+// // .clearfix:before,
+// // .clearfix:after {
+// //     content: " ";
+// //     display: table;
+// // }
+// //
+// // .clearfix:after {
+// //     clear: both;
+// // }
+// //
+// // /*********************/
+// // /* LAYOUT / SECTIONS */
+// // /*********************/
+// //
+// // //
+// // // .masthead
+// // //
+// //
+// // .wrapper-masthead {
+// // }
+// //
+// // .masthead {
+// //   @include mobile {
+// //   //  text-align: center;
+// //   }
+// // }
+// //
+// // .site-avatar {
+// //   @include mobile {
+// //   }
+// //   img {
+// //   }
+// // }
+// //
+// // .site-info {
+// //   @include mobile {
+// //     // float: none;
+// //     // display: block;
+// //     // margin: 0 auto;
+// //   }
+// // }
+// //
+// // .site-name {
+// // }
+// //
+// // .site-description {
+// //   @include mobile {
+// //     // margin: 3px 0;
+// //   }
+// // }
+// //
+// // nav {
+// //   @include mobile {
+// //     // float: none;
+// //     // margin-top: 9px;
+// //     // display: block;
+// //     // font-size: 16px;
+// //   }
+// //   a {
+// //     @include mobile {
+// //       // margin: 0 10px;
+// //       // color: $brand-c2;
+// //     }
+// //   }
+// // }
+//
+// // Settled on moving the import of syntax highlighting to the bottom of the CSS
+// // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";
 @import "_svg-icons";
