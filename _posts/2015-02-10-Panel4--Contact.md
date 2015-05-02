@@ -11,15 +11,6 @@ published: true
             <h2>{{ page.title}} {{ site.name }}</h2>
 
 
-            <!--form accept-charset="UTF-8" action="https://formkeep.com/f/7f25060beeec" method="POST">
-              <input type="hidden" name="utf8" value="✓">
-              <input type="hidden" name="url" placeholder="http://getittogether.us">
-              <input type="email" name="email" placeholder="">
-              <input type="text" name="name" placeholder="Hello">
-
-              <button type="submit">Send Email</button>
-            </form-->
-
 <form class="form-horizontal" accept-charset="UTF-8" action="https://formkeep.com/f/7f25060beeec" method="POST">
 <fieldset>
 

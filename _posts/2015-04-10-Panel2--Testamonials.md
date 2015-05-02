@@ -22,8 +22,7 @@ published: true
     <div class="row">
       <div class="col-md-12">
           <h2>{{ page.title }} {{ site.name }}</h2>
-          <!--a href="#" class="btn btn-default btn-lg">button foobar</a-->
-        </div>
+      </div>
     </div>
     <div class="row main">
       <div class="col-md-5 col-lg-offset-1 art"><img src="../img/testamonials-yes-opt.svg" class="img-responsive" alt="Responsive image">
