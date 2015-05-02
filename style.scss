@@ -635,7 +635,17 @@ section#about {
 // Panel4 -- Contact
 //
 section#contact {
+  color: $white;
    background-color: $panel4-bg-clr;
+   input,textarea {
+     background-color: $gray;
+   }
+   p {
+     color: $lightgray;
+   }
+   form {
+     margin-top: 30px;
+   }
 }
 
 

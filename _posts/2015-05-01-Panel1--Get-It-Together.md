@@ -1,6 +1,6 @@
 ---
 title: "3 Steps"
-subtitle: "Form Follows Function"
+subtitle: "The Art of Doing More with Less"
 description: "<p>Our three-step interior therepy program will cut through the clutter.</p><p>A new harmonious environment will leave you free to do more of what's important to you.</p><p>With less.</p>"
 step1_title: "Motivation"
 step1_text:  "A compelling set of questions to unlock the potential for your living / workspace"
