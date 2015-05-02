@@ -64,8 +64,6 @@ published: true
 
 </fieldset>
 </form>
-
-
             <p><a href="mailto:{{ site.links.email }}">{{ site.links.email }}</a></p>
               <p>Other contact info and social site accounts are in the footer.</p>
         </div>
