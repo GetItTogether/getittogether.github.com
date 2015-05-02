@@ -302,7 +302,21 @@ section#testamonials {
    }
    .words {
      div {
+       background-color: $panel3-bg-clr;
        border: 10px solid $black;
+     }
+     .quote {
+
+       margin: 10px 10px 0;
+       clear: both;
+       text-align: left;
+     }
+     .author {
+       margin: 0px 10px 10px;
+       padding-right: 10px;
+       color: $gray;
+       font-style: italic;
+       text-align: right;
      }
    }
 }
