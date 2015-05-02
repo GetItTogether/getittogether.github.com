@@ -69,8 +69,7 @@ a {
 //
 .navbar-custom .navbar-brand {
     float: left;
-    height: $navbar-height;
-    //padding: 15px;
+    height: $nav-height;
     padding: 10px 10px;
     font-size: 18px;
     line-height: 20px;
@@ -79,36 +78,36 @@ a {
     vertical-align: middle;
     display: inline-block;
     max-height: 300%;
-    height: $navbar-height - 20px;
+    height: $nav-height - 20px;
   }
 }
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: $navbar-clr-border-thickness $navbar-clr-border-type $navbar-clr-border;
+    border-bottom: $nav-clr-border-thickness $nav-clr-border-type $nav-clr-border;
     text-transform: uppercase;
     font-family: $helvetica;
-    background-color: $navbar-clr-bg;
+    background-color: $nav-clr-bg;
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .navbar-custom .navbar-brand:focus {
-    outline: 0;
+  outline: 0;
 }
-// .navbar-custom .navbar-brand .navbar-toggle {
-//     padding: 4px 6px;
-//     font-size: 16px;
-//     color: $navbar-clr;
-// }
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: $nav-clr;
+}
 
 // .navbar-custom .navbar-brand .navbar-toggle:focus,
 // .navbar-custom .navbar-brand .navbar-toggle:active {
 //     outline: 0;
 // }
 .navbar-custom a {
-     color: $navbar-clr-link;
+     color: $nav-clr-link;
 }
 
 .navbar-custom .nav li a {
@@ -116,14 +115,14 @@ a {
 }
 .navbar-custom .nav li a:hover {
      outline: 0;
-     color: $navbar-clr-link;
-    background-color: rgba($navbar-clr-link-bg-hover,.8);//$navbar-clr-link-bg-hover;
+     color: $nav-clr-link;
+    background-color: rgba($nav-clr-link-bg-hover,.8);//$nav-clr-link-bg-hover;
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
      outline: 0;
-     color: $navbar-clr-link;
-     background-color: $navbar-clr-link-bg-hover;
+     color: $nav-clr-link;
+     background-color: $nav-clr-link-bg-hover;
 }
 
 .navbar-custom .nav li.active {
@@ -131,10 +130,10 @@ a {
 }
 
 .navbar-custom .nav li.active a {
-  background-color: $navbar-clr-link-bg-hover;;//
+  background-color: $nav-clr-link-bg-hover;;//
       &:hover {
-         color: $navbar-clr-link;
-         background-color: $navbar-clr-link-bg-hover;
+         color: $nav-clr-link;
+         background-color: $nav-clr-link-bg-hover;
        }
  }
 @media (min-width:768px) {
@@ -149,12 +148,12 @@ a {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: $navbar-clr-collapse-bg;
+        background: $nav-clr-collapse-bg;
         a {
-          color: $navbar-clr-collapse-link;
+          color: $nav-clr-collapse-link;
         }
         .navbar-brand {
-          height: 50px;
+          height: $nav-height-collapse;
           img{
             height: 30px;
           }
@@ -178,7 +177,7 @@ a {
     width: 100%;
     height: 100%;
     min-height: 100%;
-    padding-top: $navbar-height;
+    padding-top: $nav-height;
     background-image: url($panel1-woman), url($panel1-bar);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -259,16 +258,53 @@ a {
 }
 
 
+// SECTIONS
+.intro-body, section {
+  padding-top: $nav-height;
+}
+@media (max-width: 979px) {
+  .intro-body,section {
+    padding-top: $nav-height;
+  }
+}
 
 
+section {
+   background-color: $panel1-bg-clr;
+   //padding-top: $nav-height;
+}
+
 
 //
-// Testamonials -- Panel2
+// Panel2 -- Testamonials
 //
-//
-//
-#testamonials {
+.img-responsive {
+  width: 100%\9;
+}
+section#testamonials {
    background-color: $panel2-bg-clr;
+
+    .main {
+
+    }
+   .art {
+    //  background-image: url($panel3-bg);
+    //  background-repeat: no-repeat;
+    //  background-attachment: fixed;
+    //  //background-position: 50% 0%;
+    //  background-size: contain;
+    //  width: 100%;
+    //  width: 100%\9;
+    //  height: 600px;
+      img {
+        border: 10px solid $black;
+      }
+   }
+   .words {
+     div {
+       border: 10px solid $black;
+     }
+   }
 }
 //
 // .download-section {
@@ -573,5 +609,22 @@ a {
 //
 // // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+
+//
+// Panel3 -- About
+//
+section#about {
+   background-color: $panel3-bg-clr;
+}
+
+//
+// Panel4 -- Contact
+//
+section#contact {
+   background-color: $panel4-bg-clr;
+}
+
+
+
 @import "_highlights";
 @import "_svg-icons";

@@ -57,16 +57,17 @@ $white: #fff;
 // -----------------------------------------------------------------------------
 
 // Navigation
-$navbar-height: 70px;
-$navbar-clr: #f00;
-$navbar-clr-link: $black;
-$navbar-clr-bg: transparent;
-$navbar-clr-collapse-link: $white;
-$navbar-clr-collapse-bg: rgba(0, 0, 0, .9);
-$navbar-clr-link-bg-hover: rgba(255, 255, 255, .3);
-$navbar-clr-border: rgba(255, 255, 255, .3);
-$navbar-clr-border-thickness: 1px;
-$navbar-clr-border-type: solid;
+$nav-height: 80px;
+$nav-height-collapse: 50px;
+$nav-clr: #f00;
+$nav-clr-link: $black;
+$nav-clr-bg: transparent;
+$nav-clr-collapse-link: $white;
+$nav-clr-collapse-bg: rgba(0, 0, 0, .9);
+$nav-clr-link-bg-hover: rgba(255, 255, 255, .3);
+$nav-clr-border: rgba(255, 255, 255, .3);
+$nav-clr-border-thickness: 1px;
+$nav-clr-border-type: solid;
 
 $code-clr: rgba($white, 1);
 $code-clr-bg: rgba($brand-c1, .3);
@@ -81,8 +82,9 @@ $panel1-woman: '../img/3-steps-stripped.png';
 $panel1-bar: '../img/bar.svg';
 $panel1-bg-clr: rgba(#e2d3b2, 1);
 $panel2-bg-clr: $brand-c2;
-$panel3-bg: ''; // "../img/downloads-bg.jpg";
-
+$panel3-bg-clr: rgba(#e2d3b2, 1);
+$panel3-bg: '../img/testamonials-yes-opt.svg'; // "../img/downloads-bg.jpg";
+$panel4-bg-clr: $brand-c1;
 
 
 
