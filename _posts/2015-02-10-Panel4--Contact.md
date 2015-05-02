@@ -15,7 +15,7 @@ published: true
 <fieldset>
 
 <!-- Form Name -->
-<!-- legend>Contact Us</legend -->
+
 
 <input type="hidden" name="utf8" value="✓">
 <input type="hidden" name="url" placeholder="http://getittogether.us">
@@ -24,7 +24,7 @@ published: true
   <label class="control-label col-md-4" for="name"></label>
   <div class="controls">
     <input id="name" name="name" placeholder="Your Name" class="input-lg col-md-6" type="text">
-    <!-- p class="help-block col-md-4">Enter Your Full Name</p -->
+
   </div>
 </div>
 
@@ -33,7 +33,7 @@ published: true
   <label class="control-label col-md-4" for="email"></label>
   <div class="controls">
     <input id="email" name="email" placeholder="Your Email" class="input-lg col-md-6" required="" type="email">
-    <!-- p class="help-block">Enter your email address</p -->
+
   </div>
 </div>
 
@@ -42,7 +42,7 @@ published: true
   <label class="control-label col-md-4" for="phone"></label>
   <div class="controls">
     <input id="phone" name="phone" placeholder="415-333-4444" class="input-lg col-md-6" type="text">
-    <!-- p class="help-block">(optional, enter your phone number)</p -->
+
   </div>
 </div>
 
