@@ -24,10 +24,10 @@ published: true
           <h2>{{ page.title }} {{ site.name }}</h2>
       </div>
     </div>
-    <div class="row main">
-      <div class="col-md-5 col-lg-offset-1 art"><img src="../img/testamonials-yes-opt.svg" class="img-responsive" alt="Responsive image">
-      </div>
-      <div class="col-md-5 words">
+
+      <div class="art row">
+        <img src="../img/testamonials-yes.jpg" class="img-responsive" alt="Responsive image">
+
         <div>
           <p class="quote">{{ page.quote1 }}</p><p class="author">{{ page.author1 }}</p>
           <p class="quote">{{ page.quote2 }}</p><p class="author">{{ page.author2 }}</p>
@@ -36,6 +36,6 @@ published: true
           <p class="quote">{{ page.quote5 }}</p><p class="author">{{ page.author5 }}</p>
         </div>
       </div>
-    </div>
+
   </div>
 </section>

@@ -279,46 +279,46 @@ section {
 // Panel2 -- Testamonials
 //
 .img-responsive {
-  width: 100%\9;
 }
 section#testamonials {
-   background-color: $panel2-bg-clr;
+  background-color: $panel2-bg-clr;
 
-    .main {
+  .art {
+    background-color: $black;
+    width: 100%;
+    height:auto;
+    padding:0;
+    display: block;
+    clear: both;
+    overflow: hidden;
 
+    img {
+      margin: 1% .5% 1% 1%;
+      float: left;
+      max-width: 100%;
+      display: inline-block;
+      width:38%;
     }
-   .art {
-    //  background-image: url($panel3-bg);
-    //  background-repeat: no-repeat;
-    //  background-attachment: fixed;
-    //  //background-position: 50% 0%;
-    //  background-size: contain;
-    //  width: 100%;
-    //  width: 100%\9;
-    //  height: 600px;
-      img {
-        border: 10px solid $black;
-      }
-   }
-   .words {
-     div {
-       background-color: $panel3-bg-clr;
-       border: 10px solid $black;
-     }
-     .quote {
 
-       margin: 10px 10px 0;
-       clear: both;
-       text-align: left;
-     }
-     .author {
-       margin: 0px 10px 10px;
-       padding-right: 10px;
-       color: $gray;
-       font-style: italic;
-       text-align: right;
-     }
-   }
+    div {
+     width:58%;
+     display: inline-block;
+     margin: 1% 1% 1% .5%;
+     background-color: $panel3-bg-clr;
+     float:left;
+    }
+    .quote {
+     margin: 10px 10px 0;
+     text-align: left;
+    }
+    .author {
+     margin: 0px 10px 10px;
+     padding-right: 10px;
+     color: $gray;
+     font-style: italic;
+     text-align: right;
+    }
+  }
 }
 //
 // .download-section {
