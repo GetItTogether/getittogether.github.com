@@ -17,7 +17,7 @@ published: true
 ---
 
 <!-- Download Section -->
-<section id="testamonials" class="content-section text-center">
+<section id="testamonials" class="testamonials content-section text-center">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
