@@ -2,16 +2,16 @@
 layout: post
 title: "What People Are Saying About "
 
-quote1: 'Sit fugiat labore eu commodo quis labore esse anim commodo.'
-author1: 'Joe Schmoe'
-quote2: 'Consectetur proident veniam commodo labore anim.'
-author2: 'Bubba Shrimp'
-quote3: 'Sint nulla consectetur sit ipsum nisi exercitation qui irure voluptate voluptate id Lorem fugiat ea.'
-author3: 'Jane Doey'
-quote4: 'Anim ad commodo officia eu enim est.'
-author4: 'Incididunt Fugiat'
-quote5: 'Et laboris officia excepteur eiusmod sint.'
-author5: 'Fugiat et Elit.'
+quote1: "Lori's work in our community furthers my belief that an organized, calm, clean home is directly linked to kids doing well in class."
+author1: "Kim G"
+quote2: "Lori is one part organizing dynamo, one part life coach."
+author2: "Kimberly L"
+quote3: "Lori is one part organizing dynamo, one part life coach."
+author3: "Sam D"
+quote4: ""
+author4: ""
+quote5: ""
+author5: ""
 
 published: true
 ---
