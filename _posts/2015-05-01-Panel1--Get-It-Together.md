@@ -27,7 +27,7 @@ published: true
 						<a href="#testamonials" class="btn btn-circle page-scroll">
 						  <i class="fa fa-angle-double-down animated"></i></a>
 						</div>
-					<div class="col-md-5 col-md-offset-1 subtitle"><h2>{{ page.subtitle }}</h2></div>
+					<div class="col-md-5 col-md-offset-7 subtitle"><h2>{{ page.subtitle }}</h2></div>
 				</div>
 	</div>
 </header>
