@@ -17,7 +17,8 @@ published: true
 <header id="header" class="intro container-fluid">
 	<div class="intro-body">
 				<div class="row">
-					<div class="col-md-2 col-md-offset-10 title"><h2>{{ page.title }}</h2></div>
+					<div class="col-md-5 col-md-offset-1 brand title"><h1>{{ site.navigation.brand.text }}</h1></div>
+					<div class="col-md-3 col-md-offset-3 title"><h2>{{ page.title }}</h2></div>
 					<div class="col-md-5 col-md-offset-1 description"><span class="" style="text-align:left;">{{ page.description  }}</span></div>
 						<div class="col-md-5 col-md-offset-1">
 							<div class="col-md-3 col-md-offset-3 step1"><h2>{{ page.step1_title }}</h2><p>{{ page.step1_text }}</p></div>
@@ -26,7 +27,7 @@ published: true
 						<a href="#testamonials" class="btn btn-circle page-scroll">
 						  <i class="fa fa-angle-double-down animated"></i></a>
 						</div>
-					<div class="col-md-2 col-md-offset-1 subtitle"><h2>{{ page.subtitle }}</h2></div>
+					<div class="col-md-5 col-md-offset-1 subtitle"><h2>{{ page.subtitle }}</h2></div>
 				</div>
 	</div>
 </header>
