@@ -7,10 +7,15 @@
 // -----------------------------------------------------------------------------
 
 // Font stacks
-$helvetica: Helvetica, Arial, 'Droid Sans', Raleway, sans-serif;
-$helvetica-neue: 'Helvetica Neue', Helvetica, Arial, 'Droid Sans', Raleway, sans-serif;
+$helvetica: Helvetica, Arial, 'Droid Sans', 'Ubuntu Sans', 'Liberation Sans', 'DejaVu Sans', sans-serif;
+$raleway: Raleway, Helvetica, Arial, 'Droid Sans', 'Ubuntu Sans', 'Liberation Sans', 'DejaVu Sans', sans-serif;
+$montserrat: Montserrat, Helvetica, Arial, 'Droid Sans', 'Ubuntu Sans', 'Liberation Sans', 'DejaVu Sans', sans-serif;
+$helvetica-neue: 'Helvetica Neue', Helvetica, Arial, 'Droid Sans', 'Liberation Sans', sans-serif;
 $georgia: Georgia, 'Times New Roman', Times, serif;
-
+$brand-fontsize-lg: 4vw;
+$brand-fontsize-sm: 18px;
+$brand-lineheight-lg: 46px;
+$brand-lineheight-sm: 20px;
 // Brand Colors
 $brand-c1: rgba(#017b86, 1);
 $brand-c1-lighter: rgba(#20a9b6, 1);
