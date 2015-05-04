@@ -1,6 +1,5 @@
 ---
 ---
-
 //
 // IMPORTS
 //
@@ -10,17 +9,17 @@
 // Syntax highlighting @import is at the bottom of this file
 // -------------------------- ORIGINAL grayscale.css
 body {
-    font-family: $raleway;
-    width: 100%;
-    height: 100%;
-    color: $text-main-clr;
-    background-color: #ccc;
+  background-color: $lightgray;
+  color: $text-main-clr;
+  font-family: $raleway;
+  height: 100%;
+  width: 100%;
 }
 
 html {
-    font-family: $raleway;
-    width: 100%;
-    height: 100%;
+  font-family: $raleway;
+  height: 100%;
+  width: 100%;
 }
 
 h1,
@@ -29,144 +28,156 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: $raleway;
-    font-weight: 700;
-    letter-spacing: 1px;
+  font-family: $raleway;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 35px;
+  text-transform: uppercase;
 }
 
 code {
-  color: $code-clr;
   background-color: $code-clr-bg;
-  padding:4px 8px;
+  color: $code-clr;
+  padding: 4px 8px;
 }
 
 p {
-    margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
-    @media (min-width:768px) {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+
+  @media (min-width:768px) {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
 }
 
 a {
-    color: $brand-c1;
-    transition: all .2s ease-in-out;
-    &:hover,
-    &:focus {
-        text-decoration: none;
-        color: $brand-c2;
-    }
+  color: $brand-c1;
+  transition: all .2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $brand-c2;
+    text-decoration: none;
+  }
 }
 
 // .light {
 //     font-weight: 400;
 // }
 //
-.navbar-custom .navbar-brand {
-    float: left;
-    height: $nav-height;
-    padding: 10px 10px;
-    font-size: $brand-fontsize-lg;
-    line-height: $brand-lineheight-lg;
-    display: inline-block;
-    &> img {
-      vertical-align: middle;
-      display: none;
-      max-height: 300%;
-      height: $nav-height - 20px;
-    }
-}
+
 .navbar-custom {  // Mobile first nav
-    margin-bottom: 0;
-    border-bottom: $nav-clr-border-thickness $nav-clr-border-type $nav-clr-border;
-    text-transform: uppercase;
-    font-family: $raleway;
-    background-color: $nav-clr-bg;
-    //margin-left: 8.33%;  // added to indent BRAND
-}
+  background-color: $nav-clr-bg;
+  border-bottom: $nav-clr-border-thickness $nav-clr-border-type $nav-clr-border;
+  font-family: $raleway;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  //margin-left: 8.33%;  // added to indent BRAND
 
-.navbar-custom .container-fluid .navbar-brand {
-  font-weight: 700;
-}
+  a {
+    color: $nav-clr-link;
+  }
 
-.navbar-custom .navbar-brand:focus {
-  outline: 0;
-}
-.navbar-custom .navbar-brand .navbar-toggle {
-  padding: 4px 6px;
-  font-size: 16px;
-  color: $nav-clr;
-}
+  .container-fluid .navbar-brand {
+    font-weight: 700;
+  }
 
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
-     outline: 0;
-}
-.navbar-custom a,
-.navbar-custom .navbar-toggle {
-     color: $nav-clr-link;
-}
+  .navbar-brand {
+    display: inline-block;
+    float: left;
+    font-size: $brand-fontsize-lg;
+    height: $nav-height;
+    line-height: $brand-lineheight-lg;
+    padding: 10px;
 
-.navbar-custom .nav li a {
-  transition: background .3s ease-in-out;
-}
-.navbar-custom .nav li a:hover {
-     outline: 0;
-     color: $nav-clr-link;
-    background-color: rgba($nav-clr-link-bg-hover,.8);//$nav-clr-link-bg-hover;
-}
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-     outline: 0;
-     color: $nav-clr-link;
-     background-color: $nav-clr-link-bg-hover;
-}
+    > img {
+      display: none;
+      height: $nav-height - 20px;
+      max-height: 300%;
+      vertical-align: middle;
+    }
+  }
 
-.navbar-custom .nav li.active {
+  .navbar-toggle {
+    color: $nav-clr-link;
+    font-size: 16px;
+    padding: 4px 6px;
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+  }
+  
+  .active {
     outline: 0;
+
+    a {
+      background-color: $nav-clr-link-bg-hover;
+
+      &:hover {
+        background-color: $nav-clr-link-bg-hover;
+        color: $nav-clr-link;
+       }
+     }
+  }
+
+  li a {  // @TODO: cleanup selector depth
+    transition: background .3s ease-in-out;
+  }
+
+  li a:hover {
+    background-color: rgba($nav-clr-link-bg-hover, .8);
+    color: $nav-clr-link;
+    outline: 0;
+  }
+
+  li a:active,
+  li a:focus {
+    background-color: $nav-clr-link-bg-hover;
+    color: $nav-clr-link;
+    outline: 0;
+  }
+
+  .navbar-brand:focus {
+    outline: 0;
+  }
 }
 
-.navbar-custom .nav li.active a {
-  background-color: $nav-clr-link-bg-hover;
-      &:hover {
-         color: $nav-clr-link;
-         background-color: $nav-clr-link-bg-hover;
-       }
- }
 @media (min-width:768px) {  // Fullscreen navbar
-    .navbar-custom {
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-        top: 0 - $nav-height;
+  .navbar-custom {
+    background: 0 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    top: 0 - $nav-height;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .navbar-custom.top-nav-collapse { // Used to show navbar when scrolling down
+    background: $nav-clr-collapse-bg;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding: 0;
+    top: 0;
+
+    a {
+      color: $nav-clr-collapse-link;
     }
 
-    .navbar-custom.top-nav-collapse { // Used to show navbar when scrolling down
-        padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: $nav-clr-collapse-bg;
-        top: 0;
+    .navbar-brand {
+      font-size: $brand-fontsize-sm;
+      height: $nav-height-collapse;
+      line-height: $brand-lineheight-sm;
 
-        a {
-          color: $nav-clr-collapse-link;
-        }
-        .navbar-brand {
-          font-size: $brand-fontsize-sm;
-          line-height: $brand-lineheight-sm;
-          height: $nav-height-collapse;
-          img{
-            height: 30px;
-            display: inline-block;
-          }
-        }
+      img {
+        display: inline-block;
+        height: 30px;
+      }
     }
+  }
 }
 
 //
@@ -174,54 +185,54 @@ a {
 //
 
 .intro {
-   background-color: $panel1-bg-clr;
-   position: relative;
-   //z-index: -1;
-   //min-height: 100%;
-   //display: table;   // http://stackoverflow.com/questions/26042055/firefox-rendering-of-background-image
+  background-color: $panel1-bg-clr;
+  //position: relative;
+ //z-index: -1;
+ //min-height: 100%;
+ //display: table;   // http://stackoverflow.com/questions/26042055/firefox-rendering-of-background-image
 }
 
-.intro-body {
+.intro {
+  background-attachment: fixed;
+  background-image: url($panel1-woman), url($panel1-bar);
+  background-position: 50vw 0, 55vw 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  //padding-top: $nav-height;
+
   .title {
     font-size: $brand-fontsize-lg;
     line-height: $brand-lineheight-lg;
   }
+
   .description {
     background-color: rgba($white, .5);
     //border: 10px solid rgba($gray, .4);
     border-radius: 2px;
     padding: 15px;
   }
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    //padding-top: $nav-height;
-    background-image: url($panel1-woman), url($panel1-bar);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50vw 0, 55vw 0;
-    background-size: contain;
 
-    .row div {
-      position: relative;
-      min-height: 1px;
-      padding-right: 15px;
-      padding-left: 15px;
-      float: left;
-      margin-top: 30px;
-    }
-    .description {
-      //margin-left: 5%;
-    }
+  .row div {
+    float: left;
+    margin-top: 30px;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+  }
 }
 
 @media screen and (max-device-height: 799px) { // short vertical height
   .intro-body .row div {
     margin-top: 10px;  // higher on smaller screens
   }
+
   .step1 {
     h2 {
-      margin: 0px 0px 10px; // higher on smaller screens
+      margin: 0 0 10px; // higher on smaller screens
     }
   }
 }
@@ -229,29 +240,29 @@ a {
 .step1,
 .step2,
 .step3 {
-  //position: relative;
   h2 {
-    margin: 0px 0px 20px;
+    color: $black;
     display: block;
-    color: black;
+    margin: 0 0 20px;
   }
+
   p {
-    font-size: 14px;
     color: black;
+    font-size: 14px;
   }
 
   i {
     // 3 Steps circles
-    border-radius: 50%;
     background-color: $brand-c2;
-    repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
+    behavior: url('/tools/pie/PIE.htc')\9; //* remove if you don't care about IE8 */
+    border-radius: 50%;
     height: 225px;
-    width: 225px;
-    position: absolute;
     left: -10%;
+    position: absolute;
     top: -40%;
-    behavior: url(/tools/pie/PIE.htc)\9; /* remove if you don't care about IE8 */
+    width: 225px;
   }
 }
 
@@ -260,12 +271,13 @@ a {
 //  margin-left: 60%;
 //  width: 20%;
 }
+
 .step2 {
 //  margin-left: 52%;
 //  width: 20%;
   i {
-   background-color: $panel1-bg-clr;
-  //background-image: url("img/circle-beige0.svg");
+    background-color: $panel1-bg-clr;
+    //background-image: url("img/circle-beige0.svg");
   }
 }
 
@@ -273,8 +285,8 @@ a {
 //  margin-left: 46%;
   //width: 20%;
   i {
-  background-color: $brand-c3;
-  //background-image: url("img/circle-red4.svg");
+    background-color: $brand-c3;
+    //background-image: url("img/circle-red4.svg");
   }
 }
 
@@ -282,98 +294,64 @@ a {
 // SECTIONS
 //.intro-body,
 section {
+  background-color: $panel1-bg-clr;
   padding-top: $nav-height;
 }
+
 @media (max-width: 979px) {
-  .intro-body,section {
+  .intro-body,
+  section {
     padding-top: $nav-height;
   }
 }
 
-
-section {
-   background-color: $panel1-bg-clr;
-   //padding-top: $nav-height;
-}
-
-
 //
 // Panel2 -- Testamonials
 //
-.img-responsive {
-}
-section#testamonials {
+
+.testamonials {
   background-color: $panel2-bg-clr;
 
   .art {
     background-color: $black;
-    width: 100%;
-    height:auto;
-    padding:0;
-    display: block;
     clear: both;
+    display: block;
+    height: auto;
     overflow: hidden;
+    padding: 0;
+    width: 100%;
 
     img {
-      margin: 1% .5% 1% 1%;
-      float: left;
-      max-width: 100%;
       display: inline-block;
-      width:38%;
+      float: left;
+      margin: 1% .5% 1% 1%;
+      max-width: 100%;
+      width: 38%;
     }
 
     div {
-     width:58%;
-     display: inline-block;
-     margin: 1% 1% 1% .5%;
-     background-color: $panel3-bg-clr;
-     float:left;
+      background-color: $panel3-bg-clr;
+      display: inline-block;
+      float: left;
+      margin: 1% 1% 1% .5%;
+      width: 58%;
     }
+
     .quote {
-     margin: 10px 10px 0;
-     text-align: left;
+      margin: 10px 10px 0;
+      text-align: left;
     }
+
     .author {
-     margin: 0px 10px 10px;
-     padding-right: 10px;
-     color: $gray;
-     font-style: italic;
-     text-align: right;
+      color: $gray;
+      font-style: italic;
+      margin: 0 10px 10px;
+      padding-right: 10px;
+      text-align: right;
     }
   }
 }
 
-// .download-section {
-//   display: table;
-//   width: 100%;
-//   height: auto;
-//   padding: 100px 0;
-//   text-align: center;
-//   color: #fff;
-//   //background-color: $panel1-bg-clr;
-//
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-//   background-position: 55% 0%;
-//   background-size: contain;
-//   top: 0;
-//   bottom: 0;
-//
-//     padding: 50px 0;
-//     color: #fff;
-//     background: url($panel3-bg) no-repeat center center scroll;
-//     background-size: cover;
-// }
-//
-// .download-section .container > div {
-//   background-color: darken(rgba($panel1-bg-clr,.9),40%);
-//   border-radius:20px;
-//   padding:20px;
-// }
-//
-// .intro .intro-body .intro-text {
-//     font-size: 18px;
-// }
 //
 // @media(min-width:768px) {
 //     .intro {
@@ -390,77 +368,73 @@ section#testamonials {
 //     }
 // }
 //
+
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid $brand-c2;
-    border-radius: 100%!important;
-    font-size: 40px;
-    color: $brand-c2;
-    background: 0 0;
-    transition: background .3s ease-in-out;
+  background: 0 0;
+  border: 2px solid $brand-c2;
+  border-radius: 100%;
+  color: $brand-c2;
+  font-size: 40px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  transition: background .3s ease-in-out;
+  width: 70px;
 }
 
 .btn-circle:hover,
 .btn-circle:focus {
-    outline: 0;
-    color: $brand-c2;
-    background: rgba($brand-c2,.2);
+  background: rgba($brand-c2, .2);
+  color: $brand-c2;
+  outline: 0;
 }
 
 .btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
+  transition-duration: 1s;
+  transition-property: transform;
 }
 
 .btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 @-moz-keyframes pulse {
-    0% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
 
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
 }
+
 //
 // .content-section {
 //     padding-top: 100px;
@@ -647,25 +621,29 @@ section#testamonials {
 //
 // Panel3 -- About
 //
-section#about {
-   background-color: $panel3-bg-clr;
+.about {
+  background-color: $panel3-bg-clr;
 }
 
 //
 // Panel4 -- Contact
 //
-section#contact {
+.contact {
+  background-color: $panel4-bg-clr;
   color: $white;
-   background-color: $panel4-bg-clr;
-   input,textarea {
-     background-color: $gray;
-   }
-   p {
-     color: $lightgray;
-   }
-   form {
-     margin-top: 30px;
-   }
+
+  input,
+  textarea {
+    background-color: $gray;
+  }
+
+  p {
+    color: $lightgray;
+  }
+
+  form {
+    margin-top: 30px;
+  }
 }
 
 
