@@ -81,7 +81,7 @@ a {
       height: $nav-height - 20px;
     }
 }
-.navbar-custom {
+.navbar-custom {  // Mobile first nav
     margin-bottom: 0;
     border-bottom: $nav-clr-border-thickness $nav-clr-border-type $nav-clr-border;
     text-transform: uppercase;
@@ -107,11 +107,9 @@ a {
 .navbar-custom .navbar-brand .navbar-toggle:active {
      outline: 0;
 }
-.navbar-custom a {
+.navbar-custom a,
+.navbar-custom .navbar-toggle {
      color: $nav-clr-link;
-     .navbar-brand {
-
-     }
 }
 
 .navbar-custom .nav li a {
@@ -134,25 +132,28 @@ a {
 }
 
 .navbar-custom .nav li.active a {
-  background-color: $nav-clr-link-bg-hover;;//
+  background-color: $nav-clr-link-bg-hover;
       &:hover {
          color: $nav-clr-link;
          background-color: $nav-clr-link-bg-hover;
        }
  }
-@media (min-width:768px) {
+@media (min-width:768px) {  // Fullscreen navbar
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+        top: 0 - $nav-height;
     }
 
-    .navbar-custom.top-nav-collapse {
+    .navbar-custom.top-nav-collapse { // Used to show navbar when scrolling down
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: $nav-clr-collapse-bg;
+        top: 0;
+
         a {
           color: $nav-clr-collapse-link;
         }
@@ -181,14 +182,18 @@ a {
 }
 
 .intro-body {
+  .title {
+    font-size: $brand-fontsize-lg;
+    line-height: $brand-lineheight-lg;
+  }
     width: 100%;
     height: 100%;
     min-height: 100%;
-    padding-top: $nav-height;
+    //padding-top: $nav-height;
     background-image: url($panel1-woman), url($panel1-bar);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 65% 0%, 69% 0%;
+    background-position: 50vw 0, 55vw 0;
     background-size: contain;
 
     .row div {
@@ -218,7 +223,7 @@ a {
 .step1,
 .step2,
 .step3 {
-  position: relative;
+  //position: relative;
   h2 {
     margin: 0px 0px 20px;
     display: block;
@@ -260,7 +265,7 @@ a {
 
 .step3 {
 //  margin-left: 46%;
-  width: 20%;
+  //width: 20%;
   i {
   background-color: $brand-c3;
   //background-image: url("img/circle-red4.svg");
@@ -269,7 +274,8 @@ a {
 
 
 // SECTIONS
-.intro-body, section {
+//.intro-body,
+section {
   padding-top: $nav-height;
 }
 @media (max-width: 979px) {
