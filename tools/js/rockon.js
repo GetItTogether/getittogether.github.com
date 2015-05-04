@@ -12,7 +12,7 @@ $(window).resize(function() {
     resizeDiv();
 });
 function resizeDiv() {
-    $(".container-fluid").css("height", window.innerHeight);
+    $("section").css("height", window.innerHeight);
 };
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
