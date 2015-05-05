@@ -6,10 +6,10 @@
 
 // Resize container heights
 $(document).ready(function(){
-    resizeDiv();
+    //resizeDiv();
 });
 $(window).resize(function() {
-    resizeDiv();
+    //resizeDiv();
 });
 function resizeDiv() {
     $("section").css("height", window.innerHeight);
