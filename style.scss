@@ -85,12 +85,12 @@ a {
     font-weight: 700;
   }
 
-  .navbar-brand {
+  .navbar-brand { // mobile
     display: inline-block;
     float: left;
-    font-size: $brand-fontsize-lg;
-    height: $nav-height;
-    line-height: $brand-lineheight-lg;
+    font-size: $brand-fontsize-sm;
+    height: $nav-height-collapse;
+    line-height: $brand-lineheight-sm;
     padding: 10px;
 
     > img {
@@ -153,7 +153,7 @@ a {
     border-bottom: 0;
     letter-spacing: 1px;
     padding: 20px 0;
-    top: 0 - $nav-height;
+    top: 0 - $nav-height; // hide
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
 
@@ -184,25 +184,22 @@ a {
 // Panel1
 //
 
-.intro {
-  background-color: $panel1-bg-clr;
-  //position: relative;
- //z-index: -1;
- //min-height: 100%;
- //display: table;   // http://stackoverflow.com/questions/26042055/firefox-rendering-of-background-image
-}
-
-.intro {
+.intro {  // Mobile Layout (default)
   background-attachment: fixed;
+  background-color: $panel1-bg-clr;
   background-image: url($panel1-woman), url($panel1-bar);
   background-position: 50vw 0, 55vw 0;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
+  //height: 100%;
   min-height: 100%;
+  //padding-top: $nav-height-collapse;
   width: 100%;
-  padding-top: $nav-height + 100px;
 
+  .intro-body,
+   {
+    padding-top: $nav-height-collapse;
+  }
   .title {
     font-size: $brand-fontsize-lg;
     line-height: $brand-lineheight-lg;
@@ -273,19 +270,16 @@ a {
 }
 
 
-// SECTIONS
-//.intro-body,
-section {
-  background-color: $panel1-bg-clr;
-  padding-top: $nav-height;
-}
-
 //
 // Panel2 -- Testamonials
 //
 
 .testamonials {
   background-color: $panel2-bg-clr;
+  //height: 100%;
+  min-height: 100%;
+  width: 100%;
+  padding-top: $nav-height-collapse + 100px;
 
   .art {
     background-color: $black;
@@ -555,6 +549,7 @@ body {
 // Panel3 -- About
 //
 .about {
+  height: 100%;
   background-color: $panel3-bg-clr;
 }
 
@@ -562,6 +557,7 @@ body {
 // Panel4 -- Contact
 //
 .contact {
+  height: 100%;
   background-color: $panel4-bg-clr;
   color: $white;
 
@@ -592,61 +588,65 @@ body {
     padding-top: $nav-height;
   }
 
-  .subtitle,
-  .title {
-    font-size: $brand-fontsize-lg;
-    line-height: $brand-lineheight-lg;
-  }
-
-  .subtitle,
-  .tagline {
-    text-align: right;
-  }
-
-  .description {
-    background-color: rgba($white, .3);
-    border-radius: 2px;
-    padding: 15px;
-  }
-
-  .step1,
-  .step2,
-  .step3 {
-    background-color: $brand-c2-lighter;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    behavior: url('/tools/pie/PIE.htc')\9; //* remove if you don't care about IE8 */
-    border-radius: 50%;
-    margin-top: 0;
-    height: $steps-circle-size;
-    width: $steps-circle-size;
-
-    h2 {
-      color: $black;
+  .intro { // Desktop Layout
+    padding-top: 0px;
+    .subtitle,
+    .title {
+      font-size: $brand-fontsize-lg;
+      line-height: $brand-lineheight-lg;
       display: block;
-      margin: 20% 0 10px;
-      text-align: center;
-      font-size: $steps-circle-h2;
     }
 
-    p {
-      color: black;
-      font-size: $steps-circle-p;
-      text-align: center;
+    .subtitle,
+    .tagline {
+      text-align: right;
     }
-  }
 
-  .step2 {
-    background-color: $brand-c3-lighter;
-  //  margin-left: 52%;
-    margin-right: 50%;
-  //  width: 20%;
-  }
+    .description {
+      background-color: rgba($white, .3);
+      border-radius: 2px;
+      padding: 15px;
+    }
 
-  .step3 {
-    background-color: $brand-c4-lighter;
-  //  margin-left: 46%;
-    //width: 20%;
+    .step1,
+    .step2,
+    .step3 {
+      background-color: $brand-c2-lighter;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      behavior: url('/tools/pie/PIE.htc')\9; //* remove if you don't care about IE8 */
+      border-radius: 50%;
+      margin-top: 0;
+      height: $steps-circle-size;
+      width: $steps-circle-size;
+
+      h2 {
+        color: $black;
+        display: block;
+        margin: 20% 0 10px;
+        text-align: center;
+        font-size: $steps-circle-h2;
+      }
+
+      p {
+        color: black;
+        font-size: $steps-circle-p;
+        text-align: center;
+      }
+    }
+
+    .step2 {
+      background-color: $brand-c3-lighter;
+    //  margin-left: 52%;
+      margin-right: 50%;
+    //  width: 20%;
+    }
+
+    .step3 {
+      background-color: $brand-c4-lighter;
+    //  margin-left: 46%;
+      //width: 20%;
+    }
   }
 }
 
