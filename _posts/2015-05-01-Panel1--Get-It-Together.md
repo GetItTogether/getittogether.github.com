@@ -19,7 +19,7 @@ published: true
 	<div class="intro-body">
 				<div class="row">
 					<div class="col-sm-5 col-sm-offset-1 brand title"><h1>{{ page.title }}</h1></div>
-					<div class="col-sm-3 col-sm-offset-3 subtitle"><h2>{{ page.subtitle }}</h2></div>
+					<div class="col-sm-3 col-sm-offset-2 subtitle"><h2>{{ page.subtitle }}</h2></div>
 					<div class="col-sm-5 col-sm-offset-1 description">{{ page.description }}
 						<a href="#testamonials" class="btn btn-circle page-scroll">
 							<i class="fa fa-angle-double-down animated"></i>
@@ -30,7 +30,7 @@ published: true
 						<div class="col-sm-3 col-sm-offset-2 step2"><h2>{{ page.step2_title }}</h2><p>{{ page.step2_text }}</p></div>
 						<div class="col-sm-3 col-sm-offset-1 step3"><h2>{{ page.step3_title }}</h2><p>{{ page.step3_text }}</p></div>
 					</div>
-				<div class="col-sm-5 col-sm-offset-7 tagline"><h2>{{ page.tagline }}</h2></div>
+				<div class="col-sm-5 col-sm-offset-6 tagline"><h2>{{ page.tagline }}</h2></div>
 			</div>
 	</div>
 </header>
