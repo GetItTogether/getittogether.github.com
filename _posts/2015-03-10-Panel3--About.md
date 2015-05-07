@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: About Lori
 published: true
 ---
 
@@ -8,8 +8,7 @@ published: true
 <section id="about" class="about container-fluid content-section text-center">
 		<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-						<h2>About {{ site.name}}!</h2>
-						<p>Veniam adipisicing tempor proident mollit pariatur. Veniam non commodo sunt occaecat id amet do aute nisi magna. Laborum sunt minim officia elit ea duis pariatur incididunt adipisicing. Fugiat nisi ut commodo laborum Lorem sunt duis ad exercitation amet voluptate in ex aliqua. Pariatur esse incididunt enim ex officia reprehenderit ea.</p>
+						{% include about-full.svg %}
 				</div>
 		</div>
 </section>
