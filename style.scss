@@ -554,6 +554,7 @@ body {
   background-color: $panel3-bg-clr;
   .rotate {
     transform: rotate(-3deg);
+    max-width: 100%;
   }
 }
 
