@@ -9,7 +9,7 @@
 // Syntax highlighting @import is at the bottom of this file
 // -------------------------- ORIGINAL grayscale.css
 body {
-  background-color: $lightgray;
+  background-color: $default-bg-clr;
   color: $text-main-clr;
   font-family: $raleway;
   height: 100%;
@@ -188,7 +188,7 @@ a {
   background-attachment: fixed;
   background-color: $panel1-bg-clr;
   background-image: url($panel1-woman), url($panel1-bar);
-  background-position: 50vw 0, 55vw 0;
+  background-position: 70vw 0, 75vw 0;
   background-repeat: no-repeat;
   background-size: contain;
   //height: 100%;
@@ -257,13 +257,14 @@ a {
   .step2 {
     background-color: $brand-c3-lighter;
     margin-left: 10%;
-    //margin-right: 50%;
+    margin-right: 10%;
   //  width: 20%;
   }
 
   .step3 {
     background-color: $brand-c4-lighter;
     margin-left: 0%;
+    margin-right: 20%;
   //  margin-left: 46%;
     //width: 20%;
   }
@@ -548,9 +549,12 @@ body {
 //
 // Panel3 -- About
 //
-.about {
+.about { // Mobile
   height: 100%;
   background-color: $panel3-bg-clr;
+  .rotate {
+    transform: rotate(-3deg);
+  }
 }
 
 //
@@ -590,6 +594,7 @@ body {
 
   .intro { // Desktop Layout
     padding-top: 0px;
+    background-position: 50vw 0, 55vw 0;
     .subtitle,
     .title {
       font-size: $brand-fontsize-lg;
@@ -644,6 +649,7 @@ body {
 
     .step3 {
       background-color: $brand-c4-lighter;
+      margin-right: 0%;
     //  margin-left: 46%;
       //width: 20%;
     }

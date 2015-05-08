@@ -86,15 +86,16 @@ $text-main-clr-h: $text-main-clr;
 $text-main-clr-p: $text-main-clr;
 
 // Panel customizations
+$default-bg-clr: rgba(#e2d3b2, 1);
 $panel1-woman: '../img/3-steps-stripped.png';
 $panel1-bar: '../img/bar.svg';
-$panel1-bg-clr: rgba(#e2d3b2, 1);
+$panel1-bg-clr: $default-bg-clr;
 $steps-circle-size: 200px;
 $steps-circle-h2: 18px;
 $steps-circle-p: 14px;
 $panel2-bg-clr: $brand-c1;
 $panel2-bg: '../img/testamonials-yes-opt.svg'; // "../img/downloads-bg.jpg";
-$panel3-bg-clr: rgba(#e2d3b2, 1);
+$panel3-bg-clr: $default-bg-clr;
 $panel4-bg-clr: $brand-c1;
 
 
