@@ -22,9 +22,7 @@ published: true
 <section id="about" class="about container-fluid content-section text-center">
 		<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 rotate">
-					<div class="">
-						{% include about-full.svg %}
-					</div>
+					{% include about-full.svg %}
 				</div>
 		</div>
 </section>
