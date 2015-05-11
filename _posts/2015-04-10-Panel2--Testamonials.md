@@ -16,7 +16,6 @@ author5: ""
 published: true
 ---
 
-<!-- Download Section -->
 <section id="testamonials" class="testamonials content-section text-center">
   <div class="container-fluid">
     <div class="row">
