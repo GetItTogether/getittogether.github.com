@@ -2,7 +2,7 @@
 layout: post
 title: Contact
 name: ""
-phone: "__Phone:__ 415.847.0694"
+phone: "Phone: 415.847.0694"
 published: true
 ---
 
@@ -16,8 +16,8 @@ published: true
   </div>
   <div class="row">
     <div class="col-sm-4 col-sm-offset-2">
-      {% if page.name %}{{ page.name | markdownify }}{% endif %}
-      {% if page.phone %}{{ page.phone | markdownify }}{% endif %}
+      {% if page.name %}{{ page.name }}{% endif %}
+      {% if page.phone %}{{ page.phone }}{% endif %}
       {% include o_svg-icons.html %}
     </div>
       <div class="col-sm-4">
