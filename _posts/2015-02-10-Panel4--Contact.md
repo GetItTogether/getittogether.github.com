@@ -22,45 +22,27 @@ published: true
     </div>
       <div class="col-sm-4">
         <form class="form-horizontal" accept-charset="UTF-8" action="https://formkeep.com/f/7f25060beeec" method="POST">
-
             <!-- Form Name -->
             <input type="hidden" name="utf8" value="✓">
             <input type="hidden" name="url" placeholder="http://getittogether.us">
             <!-- Text input -->
             <div class="form-group">
-              <!-- label class="control-label col-md-4" for="name"></label -->
-              <!-- div class="controls" -->
-                <input id="name" name="name" placeholder="Your Name" class="form-control" type="text">
-              <!-- /div -->
+              <input id="name" name="name" placeholder="Your Name" class="form-control" type="text">
             </div>
             <!-- Text input-->
             <div class="form-group">
-              <!-- label class="control-label col-md-4" for="email"></label -->
-              <!-- div class="controls" -->
-                <input id="email" name="email" placeholder="Your Email" class="form-control" required="" type="email">
-              <!-- /div -->
+              <input id="email" name="email" placeholder="Your Email" class="form-control" required="" type="email">
             </div>
             <!-- Text input-->
             <div class="form-group" >
-              <!-- label class="control-label col-md-4" for="phone"></label -->
-              <!-- div class="controls" -->
-                <input id="phone" name="phone" placeholder="Phone: 415-333-4444" class="form-control" type="text">
-              <!-- /div -->
+              <input id="phone" name="phone" placeholder="Phone: 415-333-4444" class="form-control" type="text">
             </div >
             <!-- Textarea -->
             <div class="form-group">
-              <!-- label class="control-label col-md-4" for="textarea"></label -->
-              <!-- div class="controls" -->
-                <textarea id="textarea" name="textarea" rows="5" class="form-control"></textarea>
-              <!-- /div -->
+              <textarea id="textarea" name="textarea" rows="5" class="form-control"></textarea>
             </div>
             <!-- Button -->
-            <!-- div class="form-group" -->
-              <!-- label class="control-label col-md-4" for="singlebutton"></label -->
-              <!-- div class="controls" -->
-                <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Send</button>
-              <!-- /div -->
-            <!-- /div -->
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Send</button>
         </form>
       </div>
   </div>
