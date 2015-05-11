@@ -8,15 +8,15 @@
 @import 'variables';
 // Syntax highlighting @import is at the bottom of this file
 // -------------------------- ORIGINAL grayscale.css
-body {
-  background-color: $default-bg-clr;
-  color: $text-main-clr;
+html {
   font-family: $raleway;
   height: 100%;
   width: 100%;
 }
 
-html {
+body {
+  background-color: $default-bg-clr;
+  color: $text-main-clr;
   font-family: $raleway;
   height: 100%;
   width: 100%;
@@ -33,6 +33,7 @@ h6 {
   letter-spacing: 1px;
   margin: 0 0 35px;
   text-transform: uppercase;
+  font-size: 36px;
 }
 
 code {
@@ -286,7 +287,7 @@ a {
     background-color: $black;
     clear: both;
     display: block;
-    height: auto;
+    min-height: 100%;
     overflow: hidden;
     padding: 0;
     width: 100%;
@@ -297,6 +298,7 @@ a {
       margin: 1% .5% 1% 1%;
       max-width: 100%;
       width: 38%;
+      min-height: 100%
     }
 
     div {
@@ -550,11 +552,16 @@ body {
 // Panel3 -- About
 //
 .about { // Mobile
-  height: 100%;
+  min-height: 100%;
+
+  display:block;
   background-color: $panel3-bg-clr;
   .rotate {
     transform: rotate(-3deg);
-    max-width: 100%;
+    svg {
+      max-width: 100%;
+      //display: block;
+    }
   }
 }
 
@@ -562,21 +569,25 @@ body {
 // Panel4 -- Contact
 //
 .contact {
-  height: 100%;
+  min-height: 100%;
   background-color: $panel4-bg-clr;
-  color: $white;
+
 
   input,
   textarea {
-    background-color: $gray;
+    //background-color: $lightgray;
   }
 
-  p {
-    color: $lightgray;
+  h2, p {
+    color: $white;
+    //color: $lightgray;
   }
 
-  form {
-    margin-top: 30px;
+  .row  {
+    margin-top: 40px;
+  }
+  strong {
+    font-weight: bold;
   }
 }
 
