@@ -572,7 +572,11 @@ body {
   min-height: 100%;
   background-color: $panel4-bg-clr;
 
-
+  .btn-primary {
+    color: #fff;
+    background-color: $brand-c2;
+    border-color: lighten($brand-c2, 30%);
+  }
   input,
   textarea {
     //background-color: $lightgray;
