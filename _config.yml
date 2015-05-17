@@ -55,9 +55,10 @@ links:
   github:
   instagram:
   linkedin:
-  pinterest:
+  napo: napo
+  pinterest: pintrest
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: twitter
+  twitter:
   irc:
     nick:
     channels: # Comma separated list of channel(s), e.g. "#jekyll,#sculpin,#css,#sass,#less,#atom,#node.js,#io.js,#drupal,#nginx"

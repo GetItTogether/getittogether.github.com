@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Contact
-name: ""
-phone: "Phone: 415.847.0694"
+name: "Lori Roudebush"
+phone: "415.259.9595"
+clickphone: "+14152599595"
 published: true
 ---
 
@@ -16,9 +17,9 @@ published: true
   </div>
   <div class="row">
     <div class="col-sm-4 col-sm-offset-2">
-      {% if page.name %}{{ page.name }}{% endif %}
-      {% if page.phone %}{{ page.phone }}{% endif %}
-      {% include o_svg-icons.html %}
+      {% if page.name %}<p>{{ page.name }}</p>{% endif %}
+      {% if page.phone %}<p>Phone: <a href="tel:{{ page.clickphone }}">{{ page.phone }}</a></p>{% endif %}
+      <p>{% include o_svg-icons.html %}</p>
     </div>
       <div class="col-sm-4">
         <form class="form-horizontal" accept-charset="UTF-8" action="https://formkeep.com/f/7f25060beeec" method="POST">

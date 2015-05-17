@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What People Are Saying About "
+title: "What People Are Saying About Get It Together"
 
 quote1: "Lori's work in our community furthers my belief that an organized, calm, clean home is directly linked to kids doing well in class."
 author1: "Kim G"
@@ -20,11 +20,11 @@ published: true
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-          <h2>{{ page.title }} {{ site.name }}</h2>
+          <h2>{{ page.title }}</h2>
       </div>
     </div>
       <div class="art row">
-        <img src="../img/testamonials-yes.jpg" class="img-responsive" alt="Responsive image">
+        <img src="../img/testamonials-yes.svg" class="img-responsive" alt="Responsive image">
         <div>
           <p class="quote">{{ page.quote1 }}</p><p class="author">{{ page.author1 }}</p>
           <p class="quote">{{ page.quote2 }}</p><p class="author">{{ page.author2 }}</p>
