@@ -437,6 +437,11 @@ body {
   min-height: 100%;
   background-color: #017b86;
 }
+.contact .btn-primary {
+  color: #fff;
+  background-color: #dc9500;
+  border-color: #ffd376;
+}
 .contact a, .contact h2, .contact p {
   color: #fff;
 }
