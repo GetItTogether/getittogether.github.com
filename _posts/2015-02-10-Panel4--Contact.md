@@ -18,9 +18,9 @@ published: true
   <div class="row">
     <div class="col-sm-4 col-sm-offset-2">
       <p>{% if page.name %}{{ page.name }}<br>{% endif %}
-      {% if site.links.email %}<a href="email:{{ site.links.email }}">{{ site.links.email }}</a><br>{% endif %}
-      {% if page.phone %}<a href="tel:{{ page.clickphone }}">{{ page.phone }}</a>{% endif %}</p>
-      <p>{% include o_svg-icons.html %}</p>
+      {% if page.phone %}<a href="tel:{{ page.clickphone }}">{{ page.phone }}</a><br>{% endif %}
+      {% if site.links.email %}<a href="email:{{ site.links.email }}">{{ site.links.email }}</a>{% endif %}</p>
+      <p></p>
     </div>
       <div class="col-sm-4">
         <form class="form-horizontal" accept-charset="UTF-8" action="https://formkeep.com/f/7f25060beeec" method="POST">

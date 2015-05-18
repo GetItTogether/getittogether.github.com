@@ -12,6 +12,7 @@ html {
   font-family: $raleway;
   height: 100%;
   width: 100%;
+  //max-width: 1920px;
 }
 
 body {
@@ -213,6 +214,10 @@ a {
   }
 
   .subtitle,
+  .subtitle h2 {
+    font-family: $helvetica-git;
+    //font-family: $montserrat;
+  }
   .tagline {
     //text-align: right;
   }
@@ -634,11 +639,13 @@ body {
 
     .subtitle {
       text-align: right;
+      font-size: 27px;
+      font-size: 2vw;
     }
-    .subtitle,
     .tagline {
       //text-align: right;
       font-size: 27px;
+      font-size: 1.85vw;
     }
 
     .description {
