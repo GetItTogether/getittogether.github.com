@@ -33,7 +33,12 @@ h6 {
   letter-spacing: 1px;
   margin: 0 0 35px;
   text-transform: uppercase;
-  font-size: 36px;
+  //font-size: 36px;
+}
+
+h1 {
+  margin: 0 0 5px;
+  padding-top: 100px;
 }
 
 code {
@@ -236,7 +241,7 @@ a {
     //behavior: url('/tools/pie/PIE.htc')\9; //* remove if you don't care about IE8 */
     //border-radius: 50%;
     margin-top: 10px;
-    margin-left: 20%;
+    margin-left: 65%;
     //height: $steps-circle-size;
     //width: $steps-circle-size;
 
@@ -256,21 +261,24 @@ a {
   }
 
   .step2 {
-    background-color: $brand-c3-lighter;
-    margin-left: 10%;
+    background-color: rgba($brand-c3-lighter, .6);
+    margin-left: 55%;
     margin-right: 10%;
   //  width: 20%;
   }
 
   .step3 {
-    background-color: $brand-c4-lighter;
-    margin-left: 0%;
+    background-color: rgba($brand-c4-lighter, .6);
+    margin-left: 45%;
     margin-right: 20%;
   //  margin-left: 46%;
     //width: 20%;
   }
 }
-
+.intro.debug div[class^="col-"],
+.intro.debug div[class*=" col-"] {
+  background-color: rgba($brand-c3-lightest, .3);
+}
 
 //
 // Panel2 -- Testamonials
@@ -574,8 +582,8 @@ body {
 
   .btn-primary {
     color: #fff;
-    background-color: $brand-c2;
-    border-color: lighten($brand-c2, 30%);
+    background-color: $brand-c4;
+    border-color: $brand-c4-lighter;
   }
   input,
   textarea {
@@ -592,6 +600,12 @@ body {
   }
   strong {
     font-weight: bold;
+  }
+
+  .form-horizontal {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
   }
 }
 
@@ -618,13 +632,18 @@ body {
       display: block;
     }
 
+    .subtitle {
+      text-align: right;
+    }
     .subtitle,
     .tagline {
-      text-align: right;
+      //text-align: right;
+      font-size: 27px;
     }
 
     .description {
-      background-color: rgba($white, .3);
+      //background-color: rgba($white, .3);
+      background-color: $panel3-bg-clr;
       border-radius: 2px;
       padding: 15px;
     }
