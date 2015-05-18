@@ -9,7 +9,6 @@ step2_title: "Mindset"
 step2_text: "Customized plan to enssure your surroundings relate intelligently to who you are"
 step3_title: "Method"
 step3_text:  "Sensative when it comes to letting-go-of-stuff.  No-nonsense getting you organized"
-
 layout: post
 published: true
 ---
@@ -21,7 +20,6 @@ published: true
 				<div class="col-sm-5 col-sm-offset-1">
 						<div class="brand title"><h1>{{ page.title }}</h1></div>
 						<div class="col-sm-12 tagline"><h2>{{ page.tagline }}</h2></div>
-
 							<div class="row">
 								<div class="col-sm-10 description">{{ page.description }}
 								<a href="#testamonials" class="btn btn-circle page-scroll">
@@ -40,10 +38,8 @@ published: true
 						</div>
 						<div class="row">
 							<div class="col-sm-3 col-sm-offset-5 step3"><h2>{{ page.step3_title }}</h2><p>{{ page.step3_text }}</p></div>
-
 						</div>
 					</div>
-
 			</div>
 	</div>
 </header>
