@@ -1,0 +1,703 @@
+---
+---
+//
+// IMPORTS
+//
+
+@import 'reset';
+@import 'variables';
+// Syntax highlighting @import is at the bottom of this file
+// -------------------------- ORIGINAL grayscale.css
+html {
+  font-family: $raleway;
+  height: 100%;
+  width: 100%;
+  //max-width: 1920px;
+}
+
+body {
+  background-color: $default-bg-clr;
+  color: $text-main-clr;
+  font-family: $raleway;
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $raleway;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  //font-size: 36px;
+}
+
+h1 {
+  margin: 0 0 5px;
+  padding-top: 100px;
+}
+
+code {
+  background-color: $code-clr-bg;
+  color: $code-clr;
+  padding: 4px 8px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+
+  @media (min-width:768px) { // Desktop Layout
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
+
+a {
+  color: $brand-c1;
+  transition: all .2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $brand-c2;
+    text-decoration: none;
+  }
+}
+
+// .light {
+//     font-weight: 400;
+// }
+//
+
+.navbar-custom {  // Mobile first nav
+  background-color: $nav-clr-bg;
+  border-bottom: $nav-clr-border-thickness $nav-clr-border-type $nav-clr-border;
+  font-family: $raleway;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  //margin-left: 8.33%;  // added to indent BRAND
+
+  a {
+    color: $nav-clr-link;
+  }
+
+  .container-fluid .navbar-brand {
+    font-weight: 700;
+  }
+
+  .navbar-brand { // mobile
+    display: inline-block;
+    float: left;
+    font-size: $brand-fontsize-sm;
+    height: $nav-height-collapse;
+    line-height: $brand-lineheight-sm;
+    padding: 10px;
+
+    > img {
+      display: none;
+      height: $nav-height - 20px;
+      max-height: 300%;
+      vertical-align: middle;
+    }
+  }
+
+  .navbar-toggle {
+    color: $nav-clr-link;
+    font-size: 16px;
+    padding: 4px 6px;
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .active {
+    outline: 0;
+
+    a {
+      background-color: $nav-clr-link-bg-hover;
+
+      &:hover {
+        background-color: $nav-clr-link-bg-hover;
+        color: $nav-clr-link;
+       }
+     }
+  }
+
+  li a {  // @TODO: cleanup selector depth
+    transition: background .3s ease-in-out;
+  }
+
+  li a:hover {
+    background-color: rgba($nav-clr-link-bg-hover, .8);
+    color: $nav-clr-link;
+    outline: 0;
+  }
+
+  li a:active,
+  li a:focus {
+    background-color: $nav-clr-link-bg-hover;
+    color: $nav-clr-link;
+    outline: 0;
+  }
+
+  .navbar-brand:focus {
+    outline: 0;
+  }
+}
+
+@media (min-width:768px) {  // Desktop navbar
+  .navbar-custom {
+    background: 0 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    top: 0 - $nav-height; // hide
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .navbar-custom.top-nav-collapse { // Used to show navbar when scrolling down
+    background: $nav-clr-collapse-bg;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding: 0;
+    top: 0;
+
+    a {
+      color: $nav-clr-collapse-link;
+    }
+
+    .navbar-brand {
+      font-size: $brand-fontsize-sm;
+      height: $nav-height-collapse;
+      line-height: $brand-lineheight-sm;
+
+      img {
+        display: inline-block;
+        height: 30px;
+      }
+    }
+  }
+}
+
+//
+// Panel1
+//
+
+.intro {  // Mobile Layout (default)
+  background-attachment: fixed;
+  background-color: $panel1-bg-clr;
+  background-image: url($panel1-woman), url($panel1-bar);
+  background-position: 70vw 0, 75vw 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  //height: 100%;
+  min-height: 100%;
+  //padding-top: $nav-height-collapse;
+  width: 100%;
+
+  .intro-body,
+   {
+    padding-top: $nav-height-collapse;
+  }
+  .title {
+    font-size: $brand-fontsize-lg;
+    line-height: $brand-lineheight-lg;
+    display: none;
+  }
+
+  .subtitle,
+  .subtitle h2 {
+    font-family: $helvetica-git;
+    //font-family: $montserrat;
+  }
+  .tagline {
+    //text-align: right;
+  }
+
+  .description {
+    background-color: rgba($white, .7);
+    border-radius: 2px;
+    padding: 15px;
+  }
+
+  .row div {
+    //float: left;
+    //margin-top: 30px;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    //position: relative;
+  }
+
+  .step1,
+  .step2,
+  .step3 {
+    background-color: $brand-c2-lighter;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    //behavior: url('/tools/pie/PIE.htc')\9; //* remove if you don't care about IE8 */
+    //border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 65%;
+    //height: $steps-circle-size;
+    //width: $steps-circle-size;
+
+    h2 {
+      color: $black;
+      display: block;
+      margin: 10px 0;
+      //text-align: center;
+      font-size: $steps-circle-h2;
+    }
+
+    p {
+      color: black;
+      font-size: $steps-circle-p;
+      text-align: center;
+    }
+  }
+
+  .step2 {
+    background-color: rgba($brand-c3-lighter, .6);
+    margin-left: 55%;
+    margin-right: 10%;
+  //  width: 20%;
+  }
+
+  .step3 {
+    background-color: rgba($brand-c4-lighter, .6);
+    margin-left: 45%;
+    margin-right: 20%;
+  //  margin-left: 46%;
+    //width: 20%;
+  }
+}
+.intro.debug div[class^="col-"],
+.intro.debug div[class*=" col-"] {
+  background-color: rgba($brand-c3-lightest, .3);
+}
+
+//
+// Panel2 -- Testamonials
+//
+
+.testamonials {
+  background-color: $panel2-bg-clr;
+  //height: 100%;
+  min-height: 100%;
+  width: 100%;
+  padding-top: $nav-height-collapse + 100px;
+
+  .art {
+    background-color: $black;
+    clear: both;
+    display: block;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+
+    img {
+      display: inline-block;
+      float: left;
+      margin: 1% .5% 1% 1%;
+      max-width: 100%;
+      width: 38%;
+      min-height: 100%
+    }
+
+    div {
+      background-color: $panel3-bg-clr;
+      display: inline-block;
+      float: left;
+      margin: 1% 1% 1% .5%;
+      width: 58%;
+    }
+
+    .quote {
+      margin: 10px 10px 0;
+      text-align: left;
+    }
+
+    .author {
+      color: $gray;
+      font-style: italic;
+      margin: 0 10px 10px;
+      padding-right: 10px;
+      text-align: right;
+    }
+  }
+}
+
+//
+// @media(min-width:768px) {
+//     .intro {
+//         height: 100%;
+//         padding: 0;
+//     }
+//
+//     .intro .intro-body .brand-heading {
+//         font-size: 100px;
+//     }
+//
+//     .intro .intro-body .intro-text {
+//         font-size: 26px;
+//     }
+// }
+//
+
+.btn-circle {
+  background: 0 0;
+  border: 2px solid $brand-c1;
+  border-radius: 100%;
+  color: $brand-c1;
+  display: block;
+  font-size: 40px;
+  height: 70px;
+  margin: 15px auto 0;
+  padding: 7px 16px;
+  transition: background .3s ease-in-out;
+  width: 70px;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+  background: rgba($brand-c1-lighter, .4);
+  color: $brand-c1-lightest;
+  border: 2px solid $brand-c1-lightest;
+  outline: 0;
+}
+
+.btn-circle i.animated {
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.btn-circle:hover i.animated {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+//
+//
+// @media(min-width:767px) {
+// }
+//
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) { // Small screen
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: $selection-clr-bg;
+}
+
+::selection {
+    text-shadow: none;
+    background: $selection-clr-bg;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+//
+//
+//
+//
+//
+// // -------------------------- ORIGINAL JEKYLL-NOW SCSS SKELTON
+// // Fixes images in popup boxes from Google Translate
+// // .gmnoprint img {
+// //   max-width: none;
+// // }
+// //
+// // // Nicolas Gallagher's micro clearfix hack
+// // // http://nicolasgallagher.com/micro-clearfix-hack/
+// // .clearfix:before,
+// // .clearfix:after {
+// //     content: " ";
+// //     display: table;
+// // }
+// //
+// // .clearfix:after {
+// //     clear: both;
+// // }
+// //
+// // /*********************/
+// // /* LAYOUT / SECTIONS */
+// // /*********************/
+// //
+// // //
+// // // .masthead
+// // //
+// //
+// // .wrapper-masthead {
+// // }
+// //
+// // .masthead {
+// //   @include mobile {
+// //   //  text-align: center;
+// //   }
+// // }
+// //
+// // .site-avatar {
+// //   @include mobile {
+// //   }
+// //   img {
+// //   }
+// // }
+// //
+// // .site-info {
+// //   @include mobile {
+// //     // float: none;
+// //     // display: block;
+// //     // margin: 0 auto;
+// //   }
+// // }
+// //
+// // .site-name {
+// // }
+// //
+// // .site-description {
+// //   @include mobile {
+// //     // margin: 3px 0;
+// //   }
+// // }
+// //
+// // nav {
+// //   @include mobile {
+// //     // float: none;
+// //     // margin-top: 9px;
+// //     // display: block;
+// //     // font-size: 16px;
+// //   }
+// //   a {
+// //     @include mobile {
+// //       // margin: 0 10px;
+// //       // color: $brand-c2;
+// //     }
+// //   }
+// // }
+//
+// // Settled on moving the import of syntax highlighting to the bottom of the CSS
+// // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+
+//
+// Panel3 -- About
+//
+.about { // Mobile
+  min-height: 100%;
+
+  display:block;
+  background-color: $panel3-bg-clr;
+  .rotate {
+    transform: rotate(-3deg);
+    svg {
+      max-width: 100%;
+      //display: block;
+    }
+  }
+}
+
+//
+// Panel4 -- Contact
+//
+.contact {
+  min-height: 100%;
+  background-color: $panel4-bg-clr;
+
+  .btn-primary {
+    color: #fff;
+    background-color: $brand-c4;
+    border-color: $brand-c4-lighter;
+  }
+  input,
+  textarea {
+    //background-color: $lightgray;
+  }
+
+  a, h2, p {
+    color: $white;
+    //color: $lightgray;
+  }
+
+  .row  {
+    margin-top: 40px;
+  }
+  strong {
+    font-weight: bold;
+  }
+
+  .form-horizontal {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+
+//
+// Desktop Layout
+//
+@media (min-width: 768px) {  // Desktop Layout
+  .intro-body,
+  section {
+    padding-top: $nav-height;
+  }
+
+  .intro { // Desktop Layout
+    padding-top: 0px;
+    background-position: 50vw 0, 55vw 0;
+    .subtitle,
+    .title {
+      font-size: $brand-fontsize-lg;
+      line-height: $brand-lineheight-lg;
+      display: block;
+    }
+
+    .subtitle {
+      text-align: right;
+      font-size: 27px;
+      font-size: 2vw;
+    }
+    .tagline {
+      //text-align: right;
+      font-size: 27px;
+      font-size: 1.85vw;
+    }
+
+    .description {
+      //background-color: rgba($white, .3);
+      background-color: $panel3-bg-clr;
+      border-radius: 2px;
+      padding: 15px;
+    }
+
+    .step1,
+    .step2,
+    .step3 {
+      background-color: $brand-c2-lighter;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      behavior: url('/tools/pie/PIE.htc')\9; //* remove if you don't care about IE8 */
+      border-radius: 50%;
+      margin-top: 0;
+      height: $steps-circle-size;
+      width: $steps-circle-size;
+
+      h2 {
+        color: $black;
+        display: block;
+        margin: 20% 0 10px;
+        text-align: center;
+        font-size: $steps-circle-h2;
+      }
+
+      p {
+        color: black;
+        font-size: $steps-circle-p;
+        text-align: center;
+      }
+    }
+
+    .step2 {
+      background-color: $brand-c3-lighter;
+    //  margin-left: 52%;
+      margin-right: 50%;
+    //  width: 20%;
+    }
+
+    .step3 {
+      background-color: $brand-c4-lighter;
+      margin-right: 0%;
+    //  margin-left: 46%;
+      //width: 20%;
+    }
+  }
+}
+
+
+@import "_highlights";
+@import "_svg-icons";
