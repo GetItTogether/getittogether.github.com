@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Contact
-name: "Lori Roudebush"
+name: 
 phone: "415.259.9595"
 clickphone: "+14152599595"
 published: true
@@ -17,8 +17,9 @@ published: true
   </div>
   <div class="row">
     <div class="col-sm-4 col-sm-offset-2">
-      {% if page.name %}<p>{{ page.name }}</p>{% endif %}
-      {% if page.phone %}<p>Phone: <a href="tel:{{ page.clickphone }}">{{ page.phone }}</a></p>{% endif %}
+      <p>{% if page.name %}{{ page.name }}<br>{% endif %}
+      {% if site.links.email %}<a href="email:{{ site.links.email }}">{{ site.links.email }}</a><br>{% endif %}
+      {% if page.phone %}<a href="tel:{{ page.clickphone }}">{{ page.phone }}</a>{% endif %}</p>
       <p>{% include o_svg-icons.html %}</p>
     </div>
       <div class="col-sm-4">

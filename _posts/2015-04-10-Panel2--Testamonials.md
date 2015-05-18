@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What People Are Saying About Get It Together"
+title: 
 
 quote1: "Lori's work in our community furthers my belief that an organized, calm, clean home is directly linked to kids doing well in class."
 author1: "Kim G"
