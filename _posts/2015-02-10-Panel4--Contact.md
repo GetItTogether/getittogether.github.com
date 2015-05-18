@@ -7,7 +7,6 @@ clickphone: "+14152599595"
 published: true
 ---
 
-<!-- Contact Section -->
 <section id="contact" class="contact container-fluid">
   <div class="row text-center">
     <div class="col-sm-12">
@@ -24,32 +23,20 @@ published: true
     </div>
       <div class="col-sm-4">
         <form class="form-horizontal" accept-charset="UTF-8" action="https://formkeep.com/f/7f25060beeec" method="POST">
-
-            <!-- Form Name -->
             <input type="hidden" name="utf8" value="✓">
             <input type="hidden" name="url" placeholder="http://getittogether.us">
-
-            <!-- Text input -->
             <div class="form-group">
               <input id="name" name="name" placeholder="Your Name" class="form-control" type="text">
             </div>
-
-            <!-- Text input-->
             <div class="form-group">
               <input id="email" name="email" placeholder="Your Email" class="form-control" required="" type="email">
             </div>
-
-            <!-- Text input-->
-            <div class="form-group" >
+            <div class="form-group">
               <input id="phone" name="phone" placeholder="Phone: 415-333-4444" class="form-control" type="text">
-            </div >
-
-            <!-- Textarea -->
+            </div>
             <div class="form-group">
               <textarea id="textarea" name="textarea" rows="5" class="form-control"></textarea>
             </div>
-
-            <!-- Button -->
             <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Send</button>
         </form>
       </div>
