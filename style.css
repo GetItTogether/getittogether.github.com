@@ -81,7 +81,11 @@ h6 {
   letter-spacing: 1px;
   margin: 0 0 35px;
   text-transform: uppercase;
-  font-size: 36px;
+}
+
+h1 {
+  margin: 0 0 5px;
+  padding-top: 100px;
 }
 
 code {
@@ -239,7 +243,7 @@ a:hover, a:focus {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: 10px;
-  margin-left: 20%;
+  margin-left: 65%;
 }
 .intro .step1 h2,
 .intro .step2 h2,
@@ -257,14 +261,19 @@ a:hover, a:focus {
   text-align: center;
 }
 .intro .step2 {
-  background-color: #ff342a;
-  margin-left: 10%;
+  background-color: rgba(255, 52, 42, 0.6);
+  margin-left: 55%;
   margin-right: 10%;
 }
 .intro .step3 {
-  background-color: #ff8e2a;
-  margin-left: 0%;
+  background-color: rgba(255, 142, 42, 0.6);
+  margin-left: 45%;
   margin-right: 20%;
+}
+
+.intro.debug div[class^="col-"],
+.intro.debug div[class*=" col-"] {
+  background-color: rgba(255, 13, 0, 0.3);
 }
 
 .testamonials {
@@ -439,8 +448,8 @@ body {
 }
 .contact .btn-primary {
   color: #fff;
-  background-color: #dc9500;
-  border-color: #ffd376;
+  background-color: #dc6800;
+  border-color: #ff8e2a;
 }
 .contact a, .contact h2, .contact p {
   color: #fff;
@@ -450,6 +459,11 @@ body {
 }
 .contact strong {
   font-weight: bold;
+}
+.contact .form-horizontal {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -468,12 +482,15 @@ body {
     line-height: 46px;
     display: block;
   }
-  .intro .subtitle,
-  .intro .tagline {
+  .intro .subtitle {
     text-align: right;
   }
+  .intro .subtitle,
+  .intro .tagline {
+    font-size: 27px;
+  }
   .intro .description {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #e2d3b2;
     border-radius: 2px;
     padding: 15px;
   }
