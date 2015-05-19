@@ -4,9 +4,10 @@ layout: default
 {% for post in site.posts %}
   {% if forloop.first == true %}
       <!-- first -->
-      {{ post.content | remove: '<p>' | remove: '</p>' }}
+      {{ post.content }}
+      <!-- end first -->
   {% else %}
       <!-- loop -->
-      {{ post.content | remove: '<p>' | remove: '</p>' }}
+      {{ post.content }}
   {% endif %}
 {% endfor %}
