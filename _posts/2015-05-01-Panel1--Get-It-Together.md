@@ -36,15 +36,16 @@ published: true
 					<div class="col-sm-5 col-sm-offset-1">
 						<div class="col-sm-9 subtitle"><h2>{{ page.subtitle }}</h2></div>
 						<div class="row">
-							<div class="col-sm-3 col-sm-offset-6 step1"><h2>{{ page.step1_title }}</h2><p>{{ page.step1_text | markdownify }}</p></div>
+							<div class="col-sm-3 col-sm-offset-6 step1"><h2>{{ page.step1_title }}</h2><p>{{ page.step1_text }}</p></div>
 						</div>
 						<div class="row">
-							<div class="col-sm-3 col-sm-offset-5 step2"><h2>{{ page.step2_title }}</h2><p>{{ page.step2_text | markdownify }}</p></div>
+							<div class="col-sm-3 col-sm-offset-5 step2"><h2>{{ page.step2_title }}</h2><p>{{ page.step2_text }}</p></div>
 						</div>
 						<div class="row">
-							<div class="col-sm-3 col-sm-offset-5 step3"><h2>{{ page.step3_title }}</h2><p>{{ page.step3_text | markdownify }}</p></div>
+							<div class="col-sm-3 col-sm-offset-5 step3"><h2>{{ page.step3_title }}</h2><p>{{ page.step3_text }}</p></div>
 						</div>
 					</div>
 			</div>
 	</div>
 </header>
+<!--a href="#about" class="btn btn-circle page-scroll"-->
