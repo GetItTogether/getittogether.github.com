@@ -2,12 +2,9 @@
 title: "Get It Together"
 subtitle: "3 Steps"
 tagline: "The Art of Doing More with Less"
-description: "Do you feel like you're always running late, or losing things? Are you reluctant to ask people over because you're sick of shutting the door on an ever increasing amount of stuff?
-
-Our three-step interior therepy program will cut through the clutter.
-
-A new harmonious environment will leave you free to do more of what's important to you.
-
+description: "Do you feel like you're always running late, or losing things? Are you reluctant to ask people over because you're sick of shutting the door on an ever increasing amount of stuff?<br><br>
+Our three-step interior therepy program will cut through the clutter.<br><br>
+A new harmonious environment will leave you free to do more of what's important to you.<br><br>
 With less."
 step1_title: "Motivation"
 step1_text:  "A compelling set of questions to unlock the potential for your living / workspace"
@@ -18,7 +15,6 @@ step3_text:  "Sensative when it comes to letting-go-of-stuff.  No-nonsense getti
 layout: post
 published: true
 ---
-
 <header id="header" class="intro container-fluid">
 	<div class="intro-body">
 				<div class="row">
@@ -26,7 +22,7 @@ published: true
 						<div class="brand title"><h1>{{ page.title }}</h1></div>
 						<div class="col-sm-12 tagline"><h2>{{ page.tagline }}</h2></div>
 							<div class="row">
-								<div class="col-sm-10 description">{{ page.description | markdownify }}
+								<div class="col-sm-10 description">{{ page.description }}
 								<a href="#testamonials" class="btn btn-circle page-scroll">
 									<i class="fa fa-angle-double-down animated"></i>
 								</a>
