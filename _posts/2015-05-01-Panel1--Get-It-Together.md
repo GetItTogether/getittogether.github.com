@@ -12,8 +12,6 @@ step3_text:  "Sensative when it comes to letting-go-of-stuff.  No-nonsense getti
 layout: post
 published: true
 ---
-
-<!-- Intro Header -->
 <header id="header" class="intro container-fluid">
 	<div class="intro-body">
 				<div class="row">
