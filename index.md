@@ -1,6 +1,6 @@
 ---
 layout: onepage
-title: ""
+title: 
 permalink: /
 published: true
 ---

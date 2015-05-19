@@ -3,8 +3,10 @@ layout: default
 ---
 {% for post in site.posts %}
   {% if forloop.first == true %}
+      <!-- first -->
       {{ post.content }}
   {% else %}
+      <!-- loop -->
       {{ post.content }}
   {% endif %}
 {% endfor %}
