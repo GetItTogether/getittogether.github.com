@@ -44,4 +44,4 @@ published: true
 			</div>
 	</div>
 </header>
-<!--a href="#about" class="btn btn-circle page-scroll"-->
+<!-- a href="#about" class="btn btn-circle page-scroll" -->
