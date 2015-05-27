@@ -571,7 +571,7 @@ body {
   display:block;
   background-color: $panel3-bg-clr;
   .rotate {
-    transform: rotate(-3deg);
+    transform: rotate(-6deg);
     svg {
       max-width: 100%;
       //display: block;
@@ -667,11 +667,12 @@ body {
       margin-top: 0;
       height: $steps-circle-size;
       width: $steps-circle-size;
+      text-align: center;
 
       h2 {
         color: $black;
         display: block;
-        margin: 20% 0 10px;
+        margin: 20% 0 20px;
         text-align: center;
         font-size: $steps-circle-h2;
       }
