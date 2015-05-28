@@ -298,29 +298,33 @@ a {
   padding-top: $nav-height-collapse + 100px;
 
   .art {
-    background-color: $black;
+    //background-color: $black;
     clear: both;
     display: block;
     min-height: 100%;
     overflow: hidden;
     padding: 0;
     width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: $panel3-bg-clr;
 
     img {
       display: inline-block;
       float: left;
       margin: 1% .5% 1% 1%;
       max-width: 100%;
-      width: 38%;
-      min-height: 100%
+      width: 100%;
+      min-height: 100%;
+      //border-right: solid 10px #000;
     }
 
-    div {
-      background-color: $panel3-bg-clr;
-      display: inline-block;
-      float: left;
-      margin: 1% 1% 1% .5%;
-      width: 58%;
+    .quotes > p {
+      margin-top: 20px;
+      //display: inline-block;
+      //float: left;
+      //margin: 0;
+      //width: 100%;
     }
 
     .quote {
@@ -586,6 +590,11 @@ body {
   min-height: 100%;
   background-color: $panel4-bg-clr;
 
+  .phone {
+    max-width: 100%;
+    width: 200px
+  }
+
   .btn-primary {
     color: #fff;
     background-color: $brand-c4;
@@ -698,6 +707,25 @@ body {
       //width: 20%;
     }
   }
+
+ .testamonials .art {
+   img {
+     width: 50%;
+   }
+
+   .quotes {
+     //width: 48.5%;
+   }
+ }
+ .contact {
+   .textright {
+     text-align: right;
+   }
+   .textleft {
+     text-align: left;
+   }
+ }
+
 }
 
 

@@ -15,8 +15,9 @@ published: true
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-4 col-sm-offset-2">
+    <div class="col-sm-4 col-sm-offset-2 text-center">
       <p>{% if page.name %}{{ page.name }}<br>{% endif %}
+      <img class="phone" src="../img/red-phone.png" alt="telphone"><br>
       {% if page.phone %}<a href="tel:{{ page.clickphone }}">{{ page.phone }}</a><br>{% endif %}
       {% if site.links.email %}<a href="email:{{ site.links.email }}">{{ site.links.email }}</a>{% endif %}</p>
       <p></p>

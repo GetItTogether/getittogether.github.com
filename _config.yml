@@ -23,6 +23,7 @@ url: http://getittogether.github.io
 baseurl: ""
 
 # Customize navigation for the site
+display-navigation: false
 navigation: # Site Navigation Menu elements: names and links
   brand:
     text: "<span class='light'>Get</span> it Together!"

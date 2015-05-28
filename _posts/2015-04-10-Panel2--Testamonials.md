@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title:
 
 quote1: "Lori's work in our community furthers my belief that an organized, calm, clean home is directly linked to kids doing well in class."
 author1: "Kim G"
@@ -25,13 +25,13 @@ published: true
     </div>
       <div class="art row">
         <img src="../img/testamonials-yes.svg" class="img-responsive" alt="Responsive image">
-        <div>
+        <span class="quotes">
           <p class="quote">{{ page.quote1 }}</p><p class="author">{{ page.author1 }}</p>
           <p class="quote">{{ page.quote2 }}</p><p class="author">{{ page.author2 }}</p>
           <p class="quote">{{ page.quote3 }}</p><p class="author">{{ page.author3 }}</p>
           <p class="quote">{{ page.quote4 }}</p><p class="author">{{ page.author4 }}</p>
           <p class="quote">{{ page.quote5 }}</p><p class="author">{{ page.author5 }}</p>
-        </div>
+        </span>
       </div>
   </div>
 </section>
