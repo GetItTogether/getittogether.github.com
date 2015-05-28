@@ -10,7 +10,6 @@ published: true
 <section id="contact" class="contact container-fluid">
   <div class="row text-center">
     <div class="col-sm-12">
-
       <p>{% if page.name %}{{ page.name }}<br>{% endif %}
       <div>
         <img class="phone" src="../img/red-phone.png" alt="telphone"><br>
