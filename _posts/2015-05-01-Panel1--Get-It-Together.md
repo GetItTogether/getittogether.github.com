@@ -2,14 +2,14 @@
 title: "Get It Together"
 subtitle: "3 Steps"
 tagline: "The Art of Doing More with Less"
-description: "Do you feel like you're always running late, or losing things? Are you reluctant to ask people over because you're sick of shutting the door on an ever increasing amount of stuff?<br><br>
-Our three-step interior therepy program will cut through the clutter.<br><br>
-A new harmonious environment will leave you free to do more of what's important to you.<br><br>
+description: "Do you feel like you are always running late, or losing things? Are you reluctant to ask people over because you are tired of shutting the door on an ever increasing amount of stuff?<br><br>
+My three-step interior therapy program will cut through the clutter.<br><br>
+A new harmonious environment will leave you free to do more of what is important to you.<br><br>
 With less."
 step1_title: "Motivation"
-step1_text:  "A compelling set of questions to unlock the potential for your living / workspace"
+step1_text:  "A compelling set of questions to unlock the potential for your living/workspace"
 step2_title: "Mindset"
-step2_text: "Customized plan to enssure your surroundings relate intelligently to who you are"
+step2_text: "Customized plan to ensure your surroundings relate intelligently to who you are"
 step3_title: "Method"
 step3_text:  "Sensative when it comes to letting-go-of-stuff.  No-nonsense getting you organized"
 layout: post
