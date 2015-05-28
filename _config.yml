@@ -48,14 +48,15 @@ avatar:
 #
 
 # Includes an icon in the footer for each username you enter
+display-footer: false
 links:
   dribbble:
   email: hi@getittogether.us
   facebook: facebook
   flickr:
   github:
-  instagram:
-  linkedin:
+  instagram: foobar
+  linkedin: foobar
   napo: napo
   pinterest: pintrest
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!

@@ -1,3 +1,4 @@
+{% if site.display-footer == true %}
 {% if site.links or site.foot %}
 <!-- Footer -->
 {% comment %}
@@ -9,4 +10,5 @@
 			<p>{{ site.navigation.foot.e1 }}</p>
 		</div>
 </footer>
+{% endif %}
 {% endif %}

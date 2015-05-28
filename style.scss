@@ -592,7 +592,18 @@ body {
 
   .phone {
     max-width: 100%;
-    width: 200px
+    width: 100%;
+    //margin-right: -10%;
+  }
+  .phonenumber {
+    margin-top: -10vw;
+    display: block;
+    margin-bottom: 8vw;
+    font-size: 4vw;
+    font-weight: bold;
+    color: rgba(255,255,255,.7);
+    text-shadow: 1px 1px 9px rgba(199, 199, 199, 0.7);
+    margin-right: -2vw;
   }
 
   .btn-primary {
