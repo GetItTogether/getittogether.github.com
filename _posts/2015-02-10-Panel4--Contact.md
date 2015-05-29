@@ -14,6 +14,10 @@ published: true
         <img class="phone" src="../img/red-phone.png" alt="telphone">
         <a class="phonenumber" href="tel:{{ page.clickphone }}">{{ page.phone }}</a>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
       <div class="social-links">{% include o_svg-icons.html %}</div>
     </div>
   </div>
