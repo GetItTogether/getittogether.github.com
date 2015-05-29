@@ -14,11 +14,9 @@ published: true
         <img class="phone" src="../img/red-phone.png" alt="telphone">
         <a class="phonenumber" href="tel:{{ page.clickphone }}">{{ page.phone }}</a>
       </div>
-    {% if site.display-footer == false %}
       <div class="social-links">
         {% include o_svg-icons.html %}
       </div>
-    {% endif %}
     </div>
   </div>
 </section>
