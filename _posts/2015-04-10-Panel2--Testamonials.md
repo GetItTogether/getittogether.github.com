@@ -3,11 +3,11 @@ layout: post
 title:
 
 quote1: "Lori's work in our community furthers my belief that an organized, calm, clean home is directly linked to kids doing well in class."
-author1: "Kim G"
-quote2: "Lori is one part organizing dynamo, one part life coach."
-author2: "Kimberly L"
-quote3: "Lori is one part organizing dynamo, one part life coach."
-author3: "Sam D"
+author1: "Kim G."
+quote2: "As a newly minted single mom I desperately wanted to be “out with the old”. Thanks to Lori, a huge weight has been lifted and it’s “on with new” beginnings."
+author2: "Kimberly T."
+quote3: "Our house was OUT OF CONTROL! After the Get It Together experience my family is now able to focus on enjoying time together instead of spending countless hours picking up. What a godsend!"
+author3: "Liz S."
 quote4: ""
 author4: ""
 quote5: ""
