@@ -19,7 +19,7 @@ published: true
         {% if site.links.email %}<a href="email:{{ site.links.email }}">{{ site.links.email }}</a>{% endif %}
       {% endcomment %}
       {% if site.display-footer == false %}
-      {% include o_svg-icons.html %}
+        {% include o_svg-icons.html %}
       {% endif %}
     </div>
   </div>
