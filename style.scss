@@ -601,9 +601,21 @@ body {
     margin-bottom: 8vw;
     font-size: 4vw;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.75);
-    text-shadow: 5px 7px 1px rgba(19, 19, 19, 0.15);
+    color: rgba(245, 235, 223, .95);
+    //text-shadow: 5px 7px 0px rgba(59, 19, 19, 0.15);
+    text-shadow: 0px 1px 0px rgba(207, 190, 178, .2), 0px 2px 0px rgba(207, 190, 178, 0.2), 0px 4px 0px rgba(186, 162, 150, .3);
     margin-right: -2vw;
+    //width: 100%;
+    //max-width: 100%;
+    //height: 50vh;
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+      text-shadow: -0px -1px 0px #999, -1px -2px 0px #888, -1px -3px 0px #777, -2px -4px 0px #666, -2px -5px 0px #555, -3px -6px 0px #444, -4px -7px 0px #333, -5px -8px 7px #001135;
+      text-shadow: 0px 1px 0px #999, 1px 2px 0px #888, 1px 3px 0px #777, 2px 4px 0px #666, 2px 5px 0px #555, 3px 6px 0px #444, 4px 7px 0px #333, 5px 8px 7px #001135;
+      text-shadow: 0px 0px 1px #999, 0px 0px 2px #888, 0px 0px 3px #777, 0px 0px 4px #666, 0px 0px 5px #555, 0px 0px 6px #444, 0px 0px 7px #333, 0px 0px 12px #001135;
+      //text-shadow: 0px 0px 20px rgba(19, 99, 99, 0.75);
+      text-shadow: 0px 1px 0px rgba(207, 190, 178, .2), 0px 2px 0px rgba(207, 190, 178, 0.2), 0px 4px 0px rgba(186, 162, 150, .3), 5px 7px 0px rgba(59, 19, 19, 0.55);
+    }
   }
 
   .btn-primary {
