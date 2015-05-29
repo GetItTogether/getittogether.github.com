@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="128" width="61.764" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 61.764501 128.00001">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(825.14 275.07)">
+  <path id="facebook" d="m-825.14-232.73h13.238v-12.862c0-5.6745 0.1445-14.42 4.2597-19.838 4.3427-5.7347 10.295-9.6331 20.546-9.6331 16.692 0 23.722 2.3782 23.722 2.3782l-3.3035 19.605s-5.5168-1.588-10.664-1.588c-5.1477 0-9.7535 1.8438-9.7535 6.984v14.954h21.102l-1.4751 19.146h-19.627v66.521h-24.805v-66.521h-13.238v-19.146" style="fill:#ffffff"/>
+ </g>
+</svg>

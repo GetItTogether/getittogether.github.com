@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="117.53" width="128" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 128 117.53153">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(97.706 -159.88)">
+  <path id="linkedin" d="m30.294 277.41h-28.29v-41.317c0-10.815-4.4253-18.198-14.156-18.198-7.4434 0-11.583 4.9821-13.509 9.7836-0.7225 1.7234-0.6093 4.1242-0.6093 6.5249v43.206h-28.026s0.3613-73.189 0-79.842h28.026v12.531c1.6557-5.4788 10.611-13.298 24.903-13.298 17.731 0 31.662 11.484 31.662 36.214v44.395zm-112.93-89.829h-0.1806c-9.0311 0-14.886-6.1035-14.886-13.84 0-7.8871 6.0279-13.863 15.24-13.863 9.2044 0 14.864 5.9605 15.044 13.84 0 7.7366-5.8401 13.863-15.217 13.863zm13.11 89.829h-24.949v-79.842h24.949v79.842" style="fill:#ffffff"/>
+ </g>
+</svg>
