@@ -16,7 +16,7 @@ published: true
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row social">
     <div class="col-sm-12 text-center">
       <div class="social-links">{% include o_svg-icons.html %}</div>
     </div>

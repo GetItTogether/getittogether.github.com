@@ -308,19 +308,25 @@ a {
     margin-right: 0;
     margin-left: 0;
     background-color: $panel3-bg-clr;
+    margin-bottom: 50px;
 
     img {
       display: inline-block;
       float: left;
-      margin: 1% .5% 1% 1%;
+      margin: 8px;
+      padding: 0 10px 10px 10px;
       max-width: 100%;
       width: 100%;
       min-height: 100%;
       //border-right: solid 10px #000;
     }
 
+    .quotes {
+      overflow: auto;
+      max-height: 40%;
+    }
     .quotes > p {
-      margin-top: 20px;
+      margin-top: 0px;
       //display: inline-block;
       //float: left;
       //margin: 0;
@@ -338,6 +344,7 @@ a {
       margin: 0 10px 10px;
       padding-right: 10px;
       text-align: right;
+      font-family: $script;
     }
   }
 }
@@ -638,7 +645,7 @@ body {
   }
 
   .row  {
-    margin-top: 40px;
+    margin-top: 0px;
   }
   strong {
     font-weight: bold;
@@ -672,6 +679,10 @@ body {
       font-size: $brand-fontsize-lg;
       line-height: $brand-lineheight-lg;
       display: block;
+      span {
+        font-size: $brand-fontsize-lg / 2;
+        vertical-align: super;
+      }
     }
 
     .subtitle {
@@ -682,7 +693,7 @@ body {
     .tagline {
       //text-align: right;
       font-size: 27px;
-      font-size: 1.85vw;
+      font-size: 1.73vw;
     }
 
     .description {

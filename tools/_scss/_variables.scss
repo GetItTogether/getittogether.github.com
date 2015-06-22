@@ -13,6 +13,8 @@ $helvetica-git: Helvetica, Raleway, Arial, 'Droid Sans', 'Ubuntu Sans', 'Liberat
 $montserrat: Montserrat, Helvetica, Arial, 'Droid Sans', 'Ubuntu Sans', 'Liberation Sans', 'DejaVu Sans', sans-serif;
 $helvetica-neue: 'Helvetica Neue', Helvetica, Arial, 'Droid Sans', 'Liberation Sans', sans-serif;
 $georgia: Georgia, 'Times New Roman', Times, serif;
+$script: Allura, $helvetica-git;
+$script: Montez, $helvetica-git;
 
 // Brand Colors
 $brand-c1: rgba(#017b86, 1);
@@ -73,7 +75,7 @@ $nav-clr-border-type: solid;
 $nav-height: 80px;
 $nav-height-collapse: 50px;
 
-$brand-fontsize-lg: 4vw;
+$brand-fontsize-lg: 3.7vw;
 $brand-fontsize-sm: 14px;
 $brand-lineheight-lg: 46px;
 $brand-lineheight-sm: 16px;
