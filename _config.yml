@@ -89,7 +89,9 @@ bootstrap:
   js: "/tools/js/bootstrap.min.js"
   #css: "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
   #js: "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
-googlefonts: "//fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,600,800|Droid+Sans:400,700"
+  #// p2: font: <link href='http://fonts.googleapis.com/css?family=Great+Vibes|Allura' rel='stylesheet' type='text/css'>
+#googlefonts: "//fonts.googleapis.com/css?family=Allura|Montserrat:400,700|Raleway:400,600,800|Droid+Sans:400,700"
+googlefonts: "//fonts.googleapis.com/css?family=Montez|Montserrat:400,700|Raleway:400,600,800|Droid+Sans:400,700"
 googlemaps: #"//maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false" # - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
 webfontloader:
   url: #"//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"
