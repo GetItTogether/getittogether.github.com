@@ -16,31 +16,33 @@ layout: post
 published: true
 ---
 <header id="header" class="intro container-fluid">
-	<div class="intro-body">
-				<div class="row">
-				<div class="col-sm-5 col-sm-offset-1">
-						<div class="brand title"><h1>{{ page.title }}</h1></div>
-						<div class="col-sm-12 tagline"><h2>{{ page.tagline }}</h2></div>
-							<div class="row">
-								<div class="col-sm-10 description">{{ page.description }}
-								<a href="#testamonials" class="btn btn-circle page-scroll">
-									<i class="fa fa-angle-double-down animated"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-5 col-sm-offset-1">
-						<div class="col-sm-9 subtitle"><h2>{{ page.subtitle }}</h2></div>
-						<div class="row">
-							<div class="col-sm-3 col-sm-offset-6 step1"><h2>{{ page.step1_title }}</h2><p>{{ page.step1_text }}</p></div>
-						</div>
-						<div class="row">
-							<div class="col-sm-3 col-sm-offset-5 step2"><h2>{{ page.step2_title }}</h2><p>{{ page.step2_text }}</p></div>
-						</div>
-						<div class="row">
-							<div class="col-sm-3 col-sm-offset-5 step3"><h2>{{ page.step3_title }}</h2><p>{{ page.step3_text }}</p></div>
-						</div>
-					</div>
+	<div class="intro-body row">
+		<div class="col-sm-5 col-sm-offset-1">
+			<div class="brand title"><h1>{{ page.title }}</h1></div>
+			<div class="tagline"><h2>{{ page.tagline }}</h2></div>
+			<div class="row">
+				<div class="col-sm-10 description">{{ page.description }}
+					<a href="#testamonials" class="btn btn-circle page-scroll">
+					<i class="fa fa-angle-double-down animated"></i>
+					</a>
+				</div>
 			</div>
+		</div>
+		<div class="col-sm-4 col-sm-offset-2">
+			<div class="row">
+				<div class="steps">
+					<div class="col-md-11 col-md-offset-0 col-lg-6 col-lg-offset-2 subtitle"><h2>{{ page.subtitle }}</h2></div>
+					<div class="row">
+						<div class="col-sm-3 col-sm-offset-6 step1"><h2>{{ page.step1_title }}</h2><p>{{ page.step1_text }}</p></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3 col-sm-offset-4 step2"><h2>{{ page.step2_title }}</h2><p>{{ page.step2_text }}</p></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3 col-sm-offset-2 step3"><h2>{{ page.step3_title }}</h2><p>{{ page.step3_text }}</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </header>

@@ -211,75 +211,73 @@ a {
   .title {
     font-size: $brand-fontsize-lg;
     line-height: $brand-lineheight-lg;
-    display: none;
+
   }
 
   .subtitle,
   .subtitle h2 {
     font-family: $helvetica-git;
-    //font-family: $montserrat;
+    margin-top: 35px;
   }
   .tagline {
     //text-align: right;
   }
 
-  .description {
+  .description,
+  .steps {
     background-color: rgba($white, .7);
     border-radius: 2px;
     padding: 15px;
+    position: relative;
   }
 
   .row div {
-    //float: left;
-    //margin-top: 30px;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    //position: relative;
   }
 
   .step1,
   .step2,
   .step3 {
-    background-color: $brand-c2-lighter;
+    background-color: rgba($brand-c2-lighter, .6);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     //behavior: url('/tools/pie/PIE.htc')\9; //* remove if you don't care about IE8 */
     //border-radius: 50%;
     margin-top: 10px;
-    margin-left: 65%;
     //height: $steps-circle-size;
     //width: $steps-circle-size;
 
-    h2 {
-      color: $black;
-      display: block;
-      margin: 10px 0;
-      //text-align: center;
-      font-size: $steps-circle-h2;
+      h2 {
+        color: $black;
+        display: block;
+        margin: 10px 0;
+        //text-align: center;
+        font-size: $steps-circle-h2;
+      }
+
+      p {
+        color: black;
+        font-size: $steps-circle-p;
+        text-align: center;
+      }
+    }
+    .step2 {
+      background-color: rgba($brand-c3-lighter, .6);
+      //margin-left: 55%;
+      //margin-right: 10%;
+      //width: 20%;
     }
 
-    p {
-      color: black;
-      font-size: $steps-circle-p;
-      text-align: center;
+    .step3 {
+      background-color: rgba($brand-c4-lighter, .6);
+      //margin-left: 45%;
+      //margin-right: 20%;
+      //  margin-left: 46%;
+      //width: 20%;
     }
-  }
 
-  .step2 {
-    background-color: rgba($brand-c3-lighter, .6);
-    margin-left: 55%;
-    margin-right: 10%;
-  //  width: 20%;
-  }
-
-  .step3 {
-    background-color: rgba($brand-c4-lighter, .6);
-    margin-left: 45%;
-    margin-right: 20%;
-  //  margin-left: 46%;
-    //width: 20%;
-  }
 }
 .intro.debug div[class^="col-"],
 .intro.debug div[class*=" col-"] {
@@ -298,12 +296,11 @@ a {
   padding-top: $nav-height-collapse + 100px;
 
   .art {
-    //background-color: $black;
     clear: both;
-    display: block;
-    min-height: 100%;
-    overflow: hidden;
-    padding: 0;
+//    display: block;
+//    min-height: 100%;
+    overflow: a;
+    padding: 10px;
     width: 100%;
     margin-right: 0;
     margin-left: 0;
@@ -311,22 +308,20 @@ a {
     margin-bottom: 50px;
 
     img {
-      display: inline-block;
+      //margin-top: 8px;
+      padding-bottom: 10px;
       float: left;
-      margin: 8px;
-      padding: 0 10px 10px 10px;
       max-width: 100%;
       width: 100%;
-      min-height: 100%;
-      //border-right: solid 10px #000;
     }
 
     .quotes {
-      overflow: auto;
-      max-height: 40%;
+      overflow-x: auto;
+      max-height: 60vh;
+      display: block;
+      width: 100%;
     }
-    .quotes > p {
-      margin-top: 0px;
+    .quotes > .quote:first-child {
       //display: inline-block;
       //float: left;
       //margin: 0;
@@ -334,7 +329,7 @@ a {
     }
 
     .quote {
-      margin: 10px 10px 0;
+      //margin: 10px 10px 0;
       text-align: left;
     }
 
@@ -696,9 +691,10 @@ body {
       font-size: 1.73vw;
     }
 
-    .description {
+    .description,
+    .steps {
       //background-color: rgba($white, .3);
-      background-color: $panel3-bg-clr;
+      background-color: transparent;
       border-radius: 2px;
       padding: 15px;
     }
@@ -734,13 +730,13 @@ body {
     .step2 {
       background-color: $brand-c3-lighter;
     //  margin-left: 52%;
-      margin-right: 50%;
+    //  margin-right: 50%;
     //  width: 20%;
     }
 
     .step3 {
       background-color: $brand-c4-lighter;
-      margin-right: 0%;
+    //  margin-right: 0%;
     //  margin-left: 46%;
       //width: 20%;
     }
@@ -749,12 +745,15 @@ body {
  .testamonials .art {
    img {
      width: 50%;
+     margin-top: 8px;
    }
 
    .quotes {
-     //width: 48.5%;
+     width: 48.5%;
+     padding-left: .8em;
    }
  }
+
  .contact {
    .textright {
      text-align: right;
