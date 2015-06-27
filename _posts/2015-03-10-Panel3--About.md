@@ -20,4 +20,7 @@ published: true
 		<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 rotate">{% include about-full.svg %}</div>
 		</div>
+		<a href="#contact" class="btn btn-circle page-scroll">
+			<i class="fa fa-angle-double-down animated"></i>
+		</a>
 </section>

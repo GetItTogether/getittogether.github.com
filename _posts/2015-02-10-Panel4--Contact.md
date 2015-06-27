@@ -18,7 +18,12 @@ published: true
   </div>
   <div class="row social">
     <div class="col-sm-12 text-center">
-      <div class="social-links">{% include o_svg-icons.html %}</div>
+      <div class="social-links">
+        {% include o_svg-icons.html %}
+      </div>
+      <a href="#header" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-up animated"></i>
+      </a>
     </div>
   </div>
 </section>
