@@ -12,7 +12,6 @@ quote4: ""
 author4: ""
 quote5: ""
 author5: ""
-
 published: true
 ---
 
