@@ -17,16 +17,14 @@ published: true
 ---
 
 <section id="about" class="about container-fluid content-section text-center">
-		<div class="row">
-				<div class="col-sm-12 rotate">{% include about-full.svg %}</div>
-		</div>
-		<div class="row">
-          <div class="col-sm-12 text-center">
-			<a href="#contact" class="btn btn-circle page-scroll">
-				<i class="fa fa-angle-double-down animated"></i>
-			</a>
-		</div>
-      </div>
-
-
+  <div class="row">
+    <div class="col-sm-12 rotate">{% include about-full.svg %}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 col-sm-offset-5 text-center">
+      <a href="#contact" class="btn btn-circle page-scroll">
+      <i class="fa fa-angle-double-down animated"></i>
+      </a>
+    </div>
+  </div>
 </section>

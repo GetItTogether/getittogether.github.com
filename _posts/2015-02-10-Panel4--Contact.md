@@ -24,7 +24,7 @@ published: true
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1 text-center">
+    <div class="col-sm-2 col-sm-offset-5 text-center">
         <a href="#header" class="btn btn-circle page-scroll">
           <i class="fa fa-angle-double-up animated"></i>
         </a>
