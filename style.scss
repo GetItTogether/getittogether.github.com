@@ -40,7 +40,7 @@ h6 {
 
 h1 {
   margin: 0 0 5px;
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 code {
@@ -233,8 +233,8 @@ a {
 
   .row div {
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    //padding-left: 15px;
+    //padding-right: 15px;
   }
 
   .step1,
@@ -248,6 +248,7 @@ a {
     margin-top: 10px;
     //height: $steps-circle-size;
     //width: $steps-circle-size;
+    padding: 10px;
 
       h2 {
         color: $black;
@@ -293,7 +294,8 @@ a {
   //height: 100%;
   min-height: 100%;
   width: 100%;
-  padding-top: $nav-height-collapse + 100px;
+  padding-top: $nav-height-collapse + 10px;
+  padding-top: 10px;
 
   .art {
     clear: both;
@@ -342,6 +344,18 @@ a {
       font-family: $script;
     }
   }
+
+  .btn-circle {
+    border: 2px solid $default-bg-clr;
+    color: $default-bg-clr;
+  }
+
+  .btn-circle:hover,
+  .btn-circle:focus {
+    background: rgba($white, .1);
+    color: $white;
+    border: 2px solid $white;
+    }
 }
 
 //
@@ -369,7 +383,7 @@ a {
   display: block;
   font-size: 40px;
   height: 70px;
-  margin: 15px auto 0;
+  margin: 20px auto 20px;
   padding: 7px 16px;
   transition: background .3s ease-in-out;
   width: 70px;
@@ -577,7 +591,6 @@ body {
   display:block;
   background-color: $panel3-bg-clr;
   .rotate {
-    transform: rotate(-6deg);
     svg {
       max-width: 100%;
       //display: block;
@@ -629,6 +642,18 @@ body {
     background-color: $brand-c4;
     border-color: $brand-c4-lighter;
   }
+  .btn-circle {
+    border: 2px solid $brand-c3-darker;
+    color: $white;
+  }
+
+  .btn-circle:hover,
+  .btn-circle:focus {
+    background-color: rgba($brand-c3, 1);
+    color: $white;
+    border: 2px solid $brand-c3;
+  }
+
   input,
   textarea {
     //background-color: $lightgray;
@@ -661,6 +686,10 @@ body {
 // Desktop Layout
 //
 @media (min-width: 768px) {  // Desktop Layout
+  h1 {
+    padding-top: 100px;
+  }
+
   .intro-body,
   section {
     padding-top: $nav-height;
@@ -742,10 +771,13 @@ body {
     }
   }
 
- .testamonials .art {
-   img {
-     width: 50%;
-     margin-top: 8px;
+ .testamonials {
+     padding-top: $nav-height-collapse + 100px;
+    .art {
+       img {
+         width: 50%;
+         margin-top: 8px;
+       }
    }
 
    .quotes {
@@ -753,6 +785,12 @@ body {
      padding-left: .8em;
    }
  }
+
+  .about { // Desktop
+    .rotate {
+      transform: rotate(-6deg);
+    }
+}
 
  .contact {
    .textright {

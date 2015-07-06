@@ -31,9 +31,13 @@ published: true
           <p class="quote">{{ page.quote4 }}</p><p class="author">{{ page.author4 }}</p>
           <p class="quote">{{ page.quote5 }}</p><p class="author">{{ page.author5 }}</p>
         </span>
-        <a href="#about" class="btn btn-circle page-scroll">
-          <i class="fa fa-angle-double-down animated"></i>
-        </a>
+      </div>
+      <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+              <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+          </div>
       </div>
   </div>
 </section>

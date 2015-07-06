@@ -17,16 +17,10 @@ published: true
 ---
 <header id="header" class="intro container-fluid">
 	<div class="intro-body row">
-		<div class="col-sm-5 col-sm-offset-1">
+		<div class="col-sm-6 col-lg-5 col-lg-offset-1">
 			<div class="brand title"><h1>{{ page.title }}</h1></div>
 			<div class="tagline"><h2>{{ page.tagline }}</h2></div>
-			<div class="row">
-				<div class="col-sm-10 description">{{ page.description }}
-					<a href="#testamonials" class="btn btn-circle page-scroll">
-					<i class="fa fa-angle-double-down animated"></i>
-					</a>
-				</div>
-			</div>
+			<div class="description">{{ page.description }}</div>
 		</div>
 		<div class="col-sm-4 col-sm-offset-2">
 			<div class="row">
@@ -42,6 +36,13 @@ published: true
 						<div class="col-sm-3 col-sm-offset-2 step3"><h2>{{ page.step3_title }}</h2><p>{{ page.step3_text }}</p></div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1 text-center">
+				<a href="#testamonials" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
 			</div>
 		</div>
 	</div>

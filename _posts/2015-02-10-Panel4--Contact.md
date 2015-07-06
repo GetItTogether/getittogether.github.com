@@ -21,9 +21,12 @@ published: true
       <div class="social-links">
         {% include o_svg-icons.html %}
       </div>
-      <a href="#header" class="btn btn-circle page-scroll">
-        <i class="fa fa-angle-double-up animated"></i>
-      </a>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 text-center">
+        <a href="#header" class="btn btn-circle page-scroll">
+          <i class="fa fa-angle-double-up animated"></i>
+        </a>
   </div>
 </section>
