@@ -232,6 +232,7 @@ a {
     border-radius: 2px;
     padding: 15px;
     position: relative;
+    line-height: 1.2;
   }
 
   .row div {
@@ -334,6 +335,7 @@ a {
       display: block;
       width: 100%;
     }
+
     .quotes > .quote:first-child {
       //display: inline-block;
       //float: left;
@@ -342,7 +344,7 @@ a {
     }
 
     .quote {
-      //margin: 10px 10px 0;
+      margin: 0px 0px 0;
       text-align: left;
     }
 
@@ -615,6 +617,7 @@ body {
 .contact {
   min-height: 100%;
   background-color: $panel4-bg-clr;
+  padding-top: 100px;
 
   .phone {
     max-width: 100%;
@@ -741,6 +744,9 @@ body {
       padding: 15px 0
     }
 
+  .description {
+    line-height: 1.5;
+  }
     .step1,
     .step2,
     .step3 {
@@ -806,6 +812,7 @@ body {
 }
 
  .contact {
+   padding-top: 0px;
    .textright {
      text-align: right;
    }
