@@ -96,9 +96,9 @@ a {
   .navbar-brand { // mobile
     display: inline-block;
     float: left;
-    font-size: $brand-fontsize-sm;
+    font-size: $brand-fontsize-navbar;
     height: $nav-height-collapse;
-    line-height: $brand-lineheight-sm;
+    line-height: ($brand-fontsize-navbar * $brand-lineheight);
     padding: 10px;
 
     > img {
@@ -176,9 +176,9 @@ a {
     }
 
     .navbar-brand {
-      font-size: $brand-fontsize-sm;
+      font-size: $brand-fontsize-navbar;
       height: $nav-height-collapse;
-      line-height: $brand-lineheight-sm;
+      line-height: ($brand-fontsize-navbar * $brand-lineheight);
 
       img {
         display: inline-block;
@@ -209,8 +209,8 @@ a {
     padding-top: $nav-height-collapse;
   }
   .title {
-    font-size: $brand-fontsize-lg;
-    line-height: $brand-lineheight-lg;
+    font-size: $brand-fontsize-title-mobile;
+    line-height: ($brand-fontsize-title-mobile * $brand-lineheight);
 
   }
 
@@ -221,6 +221,9 @@ a {
   }
   .tagline {
     //text-align: right;
+    font-size: 14px;
+    font-size: $brand-fontsize-tagline-mobile;
+    line-height: ($brand-fontsize-tagline-mobile * $brand-lineheight);
   }
 
   .description,
@@ -235,6 +238,14 @@ a {
     min-height: 1px;
     //padding-left: 15px;
     //padding-right: 15px;
+  }
+  .row.steps {
+    margin-left: 0;
+    margin-right: 0;
+    div {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .step1,
@@ -700,11 +711,11 @@ body {
     background-position: 50vw 0, 55vw 0;
     .subtitle,
     .title {
-      font-size: $brand-fontsize-lg;
-      line-height: $brand-lineheight-lg;
+      font-size: $brand-fontsize-title-desktop;
+      line-height: ($brand-fontsize-title-desktop * $brand-lineheight);
       display: block;
-      span {
-        font-size: $brand-fontsize-lg / 2;
+      span { // trademark
+        font-size: $brand-fontsize-title-desktop / 2;
         vertical-align: super;
       }
     }
@@ -716,8 +727,10 @@ body {
     }
     .tagline {
       //text-align: right;
-      font-size: 27px;
-      font-size: 1.73vw;
+//      font-size: 27px;
+//      font-size: 1.73vw;
+      font-size: $brand-fontsize-tagline-desktop;
+      line-height: ($brand-fontsize-tagline-desktop * $brand-lineheight);
     }
 
     .description,
@@ -725,7 +738,7 @@ body {
       //background-color: rgba($white, .3);
       background-color: transparent;
       border-radius: 2px;
-      padding: 15px;
+      padding: 15px 0
     }
 
     .step1,
