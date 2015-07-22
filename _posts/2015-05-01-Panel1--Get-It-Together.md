@@ -23,18 +23,16 @@ published: true
 			<div class="description">{{ page.description }}</div>
 		</div>
 		<div class="col-sm-4 col-sm-offset-2">
-			<div class="row">
-				<div class="steps">
-					<div class="col-md-11 col-md-offset-0 col-lg-6 col-lg-offset-2 subtitle"><h2>{{ page.subtitle }}</h2></div>
-					<div class="row">
-						<div class="col-sm-3 col-sm-offset-6 step1"><h2>{{ page.step1_title }}</h2><p>{{ page.step1_text }}</p></div>
-					</div>
-					<div class="row">
-						<div class="col-sm-3 col-sm-offset-4 step2"><h2>{{ page.step2_title }}</h2><p>{{ page.step2_text }}</p></div>
-					</div>
-					<div class="row">
-						<div class="col-sm-3 col-sm-offset-2 step3"><h2>{{ page.step3_title }}</h2><p>{{ page.step3_text }}</p></div>
-					</div>
+			<div class="row steps">
+				<div class="col-md-11 col-md-offset-0 col-lg-6 col-lg-offset-2 subtitle"><h2>{{ page.subtitle }}</h2></div>
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-6 step1"><h2>{{ page.step1_title }}</h2><p>{{ page.step1_text }}</p></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-4 step2"><h2>{{ page.step2_title }}</h2><p>{{ page.step2_text }}</p></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-2 step3"><h2>{{ page.step3_title }}</h2><p>{{ page.step3_text }}</p></div>
 				</div>
 			</div>
 		</div>
