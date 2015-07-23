@@ -14,7 +14,7 @@ description: "Professional Organizing for your Home or Office, based in Marin"
 
 # Your website URL (e.g. http://username.github.io or http://www.yourdomain.foo)
 # Used for Sitemap.xml and your RSS feed
-url: http://getittogether.github.io
+url: http://www.getittogether.us
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://username.github.io/repository-name)
@@ -51,7 +51,7 @@ avatar:
 display-footer: false
 links:
   dribbble:
-  email: "hi@getittogether.us"
+  email: "lori@getittogether.us"
   facebook: "facebook"
   flickr:
   github:
