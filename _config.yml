@@ -52,13 +52,13 @@ display-footer: false
 links:
   dribbble:
   email: "lori@getittogether.us"
-  facebook: "facebook"
+  facebook: ""
   flickr:
   github:
-  instagram: "foobar"
-  linkedin: "foobar"
+  instagram: ""
+  linkedin: ""
   napo: "napo"
-  pinterest: "pintrest"
+  pinterest: ""
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter:
   irc:
