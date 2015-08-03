@@ -3,7 +3,7 @@ title: "Get It Together<span>&trade;</span>"
 subtitle: "3 Steps"
 tagline: "The Art of Doing More with Less"
 description: "Do you feel like you are always running late, or losing things? Are you reluctant to ask people over because you are tired of shutting the door on an ever increasing amount of stuff?<br><br>
-My three-step interior therapy program will cut through the clutter.<br><br>
+Our three-step interior therapy program will cut through the clutter.<br><br>
 A new harmonious environment will leave you free to do more of what is important to you.<br><br>
 With less."
 step1_title: "Motivation"
