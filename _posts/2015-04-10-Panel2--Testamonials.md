@@ -2,7 +2,7 @@
 layout: post
 title:
 
-quote1: "Lori's work in our community furthers my belief that an organized, calm, clean home is directly linked to kids doing well in class."
+quote1: "Lori's work in our community furthers my belief that a well organized home is directly linked to kids doing well in class."
 author1: "Kim Goodhope - Principal Glenwood Elementary School"
 quote2: "Our house was OUT OF CONTROL! After the Get It Together experience my family is now able to focus on enjoying time together instead of spending countless hours picking up. You're absolutely the BEST!"
 author2: "Elizabeth Scheuring - PR and Marketing Consultant"
