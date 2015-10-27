@@ -11,7 +11,7 @@ published: true
   <div class="row">
     <div class="col-sm-12 text-center">
       <div class="foo">
-        <img class="phone" src="../img/red-phone.png" alt="telphone">
+        <img class="phone" src="../img/red-phone2.png" alt="telphone">
         <a class="phonenumber" href="tel:{{ page.clickphone }}">{{ page.phone }}</a>
       </div>
     </div>

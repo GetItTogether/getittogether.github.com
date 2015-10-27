@@ -252,7 +252,7 @@ a {
   .step1,
   .step2,
   .step3 {
-    background-color: rgba($brand-c2-lighter, .6);
+    background-color: rgba($brand-c2, .6);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     //behavior: url('/tools/pie/PIE.htc')\9; //* remove if you don't care about IE8 */
@@ -277,14 +277,14 @@ a {
       }
     }
     .step2 {
-      background-color: rgba($brand-c3-lighter, .6);
+      background-color: rgba($brand-c1, .6);
       //margin-left: 55%;
       //margin-right: 10%;
       //width: 20%;
     }
 
     .step3 {
-      background-color: rgba($brand-c4-lighter, .6);
+      background-color: rgba($brand-c3, .6);
       //margin-left: 45%;
       //margin-right: 20%;
       //  margin-left: 46%;
@@ -776,14 +776,14 @@ body {
     }
 
     .step2 {
-      background-color: $brand-c3;
+      background-color: $brand-c1;
     //  margin-left: 52%;
     //  margin-right: 50%;
     //  width: 20%;
     }
 
     .step3 {
-      background-color: $brand-c4-lighter;
+      background-color: $brand-c3;
     //  margin-right: 0%;
     //  margin-left: 46%;
       //width: 20%;
