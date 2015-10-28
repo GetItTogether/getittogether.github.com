@@ -28,7 +28,7 @@ navigation: # Site Navigation Menu elements: names and links
   brand:
     text: "<span class='light'>Get</span> it Together!"
     link: "#page-top"
-    logo: "img/logo-image.svg" # if empty, defaults to an arrow icon using font-awesome
+    logo: "img/logo.svg" # if empty, defaults to an arrow icon using font-awesome
   main: # Main Menu
     e1: Testamonials
     elink1: "#testamonials"
@@ -58,7 +58,7 @@ links:
   instagram:
   linkedin:
   napo: "napo"
-  pinterest: 
+  pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter:
   irc:
