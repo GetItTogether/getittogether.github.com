@@ -617,6 +617,18 @@ body {
       //display: block;
     }
   }
+  .btn-circle {
+    margin-top: -75px;
+    color: $brand-c3;
+    border: 2px solid $brand-c3;
+  }
+
+  .btn-circle:hover,
+  .btn-circle:focus {
+    background: rgba($brand-c3, .1);
+    color: $brand-c3;
+    border: 2px solid $brand-c3;
+    }
 }
 
 //
