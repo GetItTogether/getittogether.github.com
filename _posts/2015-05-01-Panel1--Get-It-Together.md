@@ -1,7 +1,7 @@
 ---
 #title: "Get It Together<span>&trade;</span>"
 title: ""
-subtitle: "3 Steps"
+subtitle: ""
 tagline: "The Art of Doing More with Less"
 description: "Do you feel like you are always running late, or losing things? Are you reluctant to ask people over because you are tired of shutting the door on an ever increasing amount of stuff?
 Our three-step interior therapy program will cut through the clutter.<br><br>
@@ -19,7 +19,9 @@ published: true
 <header id="header" class="intro container-fluid">
 	<div class="intro-body row">
 		<div class="col-sm-6 col-lg-5 col-lg-offset-1">
+			{% if page.title != "" %}
 			<div class="brand title"><h1>{{ page.title }}</h1></div>
+			{% endif %}
 			<div class="tagline"><h2>{{ page.tagline }}</h2></div>
 			<div class="description">{{ page.description }}
 				<img class="logo" src="{{ site.navigation.brand.logo }}">
@@ -27,7 +29,9 @@ published: true
 		</div>
 		<div class="col-sm-4 col-sm-offset-2">
 			<div class="row steps">
+				{% if page.subtitle != "" %}
 				<div class="col-md-11 col-md-offset-0 col-lg-6 col-lg-offset-2 subtitle"><h2>{{ page.subtitle }}</h2></div>
+				{% endif %}
 				<div class="row">
 					<div class="col-sm-3 col-sm-offset-6 step1"><h2>{{ page.step1_title }}</h2><p>{{ page.step1_text }}</p></div>
 				</div>

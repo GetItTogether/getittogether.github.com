@@ -214,11 +214,11 @@ a {
   }
 
   .logo {
-    width: 250px;
+    width: 200px;
     display: block;
     text-align: center;
-    margin-left: 20%;
-    margin-right: 80%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 50px;
   }
 
@@ -710,10 +710,10 @@ body {
 //
 @media (min-width: 768px) {  // Desktop Layout
   h1 {
-    padding-top: 100px;
+    //padding-top: 100px;
   }
   .tagline h2 {
-    padding-top: 150px;
+    padding-top: 80px;
   }
 
   .intro-body,
@@ -749,7 +749,7 @@ body {
     }
 
     .logo {
-      width: 350px;
+      width: 250px;
       display: block;
       text-align: center;
       margin-left: auto;
