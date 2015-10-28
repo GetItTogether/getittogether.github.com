@@ -1,8 +1,9 @@
 ---
-title: "Get It Together<span>&trade;</span>"
+#title: "Get It Together<span>&trade;</span>"
+title: ""
 subtitle: "3 Steps"
 tagline: "The Art of Doing More with Less"
-description: "Do you feel like you are always running late, or losing things? Are you reluctant to ask people over because you are tired of shutting the door on an ever increasing amount of stuff?<br><br>
+description: "Do you feel like you are always running late, or losing things? Are you reluctant to ask people over because you are tired of shutting the door on an ever increasing amount of stuff?
 Our three-step interior therapy program will cut through the clutter.<br><br>
 A new harmonious environment will leave you free to do more of what is important to you.<br><br>
 With less."
@@ -20,7 +21,9 @@ published: true
 		<div class="col-sm-6 col-lg-5 col-lg-offset-1">
 			<div class="brand title"><h1>{{ page.title }}</h1></div>
 			<div class="tagline"><h2>{{ page.tagline }}</h2></div>
-			<div class="description">{{ page.description }}</div>
+			<div class="description">{{ page.description }}
+				<img class="logo" src="{{ site.navigation.brand.logo }}">
+			</div>
 		</div>
 		<div class="col-sm-4 col-sm-offset-2">
 			<div class="row steps">
