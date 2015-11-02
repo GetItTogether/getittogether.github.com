@@ -1,17 +1,16 @@
 ---
 layout: post
 title:
-
-quote1: "Lori's work in our community furthers my belief that a well organized home is directly linked to kids doing well in class."
-author1: "Kim Goodhope - Principal Glenwood Elementary School"
-quote2: "Our house was OUT OF CONTROL! Thanks to Lori, even our kids rooms are tidy and easy to keep organized."
-author2: "Elizabeth Scheuring - PR and Marketing Consultant"
-quote3: "As a newly single mom I desperately wanted to be “out with the old”. Thanks to Get It Together, a huge weight has been lifted and it’s “on with new” beginnings."
-author3: "Amie B. - Acupuncturist"
-quote4: ""
-author4: ""
-quote5: ""
-author5: ""
+quotes:
+  - author: "Kim Goodhope"
+    title: "Principal Glenwood Elementary School"
+    quote: "Lori's work in our community furthers my belief that a well organized home is directly linked to kids doing well in class."
+  - author: "Elizabeth Scheuring"
+    title: "PR and Marketing Consultant"
+    quote: "Our house was OUT OF CONTROL! Thanks to Lori, even our kids rooms are tidy and easy to keep organized."
+  - author: "Amie B."
+    title: "Acupuncturist"
+    quote: "As a newly single mom I desperately wanted to be “out with the old”. Thanks to Get It Together, a huge weight has been lifted and it’s “on with new” beginnings."
 published: true
 ---
 
@@ -25,11 +24,9 @@ published: true
       <div class="art row">
         <img src="../img/testamonials-yes.svg" class="img-responsive" alt="Responsive image">
         <span class="quotes">
-          <p class="quote">{{ page.quote1 }}</p><p class="author">{{ page.author1 }}</p>
-          <p class="quote">{{ page.quote2 }}</p><p class="author">{{ page.author2 }}</p>
-          <p class="quote">{{ page.quote3 }}</p><p class="author">{{ page.author3 }}</p>
-          <p class="quote">{{ page.quote4 }}</p><p class="author">{{ page.author4 }}</p>
-          <p class="quote">{{ page.quote5 }}</p><p class="author">{{ page.author5 }}</p>
+        {% for item in page.quotes %}
+          <p class="quote">{{ item.quote }}</p><p class="author">{{ item.author }} - {{ item.title }}</p>
+        {% endfor %}
         </span>
       </div>
       <div class="row">
