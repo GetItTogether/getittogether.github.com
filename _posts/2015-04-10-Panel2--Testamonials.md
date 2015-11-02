@@ -4,10 +4,10 @@ title:
 
 quote1: "Lori's work in our community furthers my belief that a well organized home is directly linked to kids doing well in class."
 author1: "Kim Goodhope - Principal Glenwood Elementary School"
-quote2: "Our house was OUT OF CONTROL! After the Get It Together experience my family is now able to focus on enjoying time together instead of spending countless hours picking up. You're absolutely the BEST!"
+quote2: "Our house was OUT OF CONTROL! Thanks to Lori, even our kids rooms are tidy and easy to keep organized."
 author2: "Elizabeth Scheuring - PR and Marketing Consultant"
 quote3: "As a newly single mom I desperately wanted to be “out with the old”. Thanks to Get It Together, a huge weight has been lifted and it’s “on with new” beginnings."
-author3: "Amie B. - Integrative Medicine"
+author3: "Amie B. - Acupuncturist"
 quote4: ""
 author4: ""
 quote5: ""
