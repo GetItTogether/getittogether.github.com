@@ -3,7 +3,7 @@
 title: ""
 subtitle: ""
 tagline: "The Art of Doing More with Less"
-description: "Do you feel like you are always running late, or losing things? Are you reluctant to ask people over because you are tired of shutting the door on an ever increasing amount of stuff? My three-step interior therapy program will cut through the clutter, get you organized, and transform your home or office. Leaving you free to do more of what is important to you, with less."<br><br>
+description: "Do you feel like you are always running late, or losing things? Are you reluctant to ask people over because you are tired of shutting the door on an ever increasing amount of stuff? My three-step interior therapy program will cut through the clutter, get you organized, and transform your home or office. Leaving you free to do more of what is important to you, with less."
 step1_title: "Motivation"
 step1_text:  "A compelling set of questions to unlock the potential for your living/workspace"
 step2_title: "Mindset"
