@@ -7,10 +7,13 @@ quotes:
     quote: "Lori's work in our community furthers my belief that a well organized home is directly linked to kids doing well in class."
   - author: "Elizabeth Scheuring"
     title: "PR and Marketing Consultant"
-    quote: "Our house was OUT OF CONTROL! Thanks to Lori, even our kids rooms are tidy and easy to keep organized."
+    quote: "Our house was OUT OF CONTROL! Thanks to Lori, even our kids' rooms are tidy and easy to keep organized."
   - author: "Amie B."
     title: "Acupuncturist"
     quote: "As a newly single mom I desperately wanted to be “out with the old”. Thanks to Get It Together, a huge weight has been lifted and it’s “on with new” beginnings."
+ - author: "Rhea Stewart"
+    title: "Sales and Marketing Manager"
+    quote: "On the day of our move, I was completely overwhelmed. Lori was able to navigate the entire "moving experience" calmly, efficently, and most important, effectively."
 published: true
 ---
 
