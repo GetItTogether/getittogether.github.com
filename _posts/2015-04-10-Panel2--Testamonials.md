@@ -11,7 +11,7 @@ quotes:
   - author: "Amie B."
     title: "Acupuncturist"
     quote: "As a newly single mom I desperately wanted to be “out with the old”. Thanks to Get It Together, a huge weight has been lifted and it’s “on with new” beginnings."
- - author: "Rhea Stewart"
+  - author: "Rhea Stewart"
     title: "Sales and Marketing Manager"
     quote: "On the day of our move, I was completely overwhelmed. Lori was able to navigate the entire "moving experience" calmly, efficently, and most important, effectively."
 published: true
