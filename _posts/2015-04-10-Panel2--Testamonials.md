@@ -8,12 +8,12 @@ quotes:
   - author: Elizabeth Scheuring
     title: PR and Marketing Consultant
     quote: Our house was OUT OF CONTROL! Thanks to Lori, even our kids' rooms are tidy and easy to keep organized.
+  - author: Rhea Stewart
+    title: Sales and Marketing Manager
+    quote: Lori’s strategy for our house move transformed the process from chaos and stress into the positive and rewarding experience I dreamed it would be.  
   - author: Amie B.
     title: Acupuncturist
     quote: As a newly single mom I desperately wanted to be “out with the old”. Thanks to Get It Together, a huge weight has been lifted and it’s “on with new” beginnings.
-  - author: Rhea Stewart
-    title: Sales and Marketing Manager
-    quote: Lori’s strategy for our house move transformed the process from chaos and stress into the positive and rewarding experience I dreamed it would be.
 published: true
 ---
 
